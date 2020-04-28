@@ -15,14 +15,6 @@ background-color:powderblue
 <p bgcolor="red"><b>Small Description</b></p>
 <textarea cols="140" rows="20" width="30%" style="background-color:#e6ffe6;opacity:0.8"></textarea>
 <hr>
-<form>
-<b>Patient</b>
-<input type="text"/>
-<b>Doctor</b>
-<input type="text"/>
-<b>Donator</b>
-<input type="text"/>
-</form><br></br>
 <input type="submit" value="Sign up" background-color="#4CAF50" font-size="16px" text-align="center"/>
   
 </body>
