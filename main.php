@@ -1,6 +1,5 @@
-<?php
 <!DOCTYPE html>
-<html>
+
 <head>
 <title>Frame Details</title>
 </head>
@@ -13,4 +12,3 @@
 <frameset>
 
 </html>
-?>
