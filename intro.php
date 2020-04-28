@@ -12,8 +12,8 @@ background-color:powderblue
 
 <h2 class="a" style="color:red;font-size:50px" align="center" bgcolor="yellow" >WELCOME</h2>
 <hr>
-<p bgcolor="red" style="font-size:50px"><b>Small Description</b></p>
-<textarea cols="180" rows="20" width="100%" style="background-color:#e6ffe6;opacity:0.8"></textarea>
+<p bgcolor="red"><b>Small Description</b></p>
+<textarea cols="140" rows="20" width="30%" style="background-color:#e6ffe6;opacity:0.8"></textarea>
 <hr>
 <form>
 <b>Patient</b>
