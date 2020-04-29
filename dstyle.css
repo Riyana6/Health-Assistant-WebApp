@@ -1,0 +1,21 @@
+#formdetails {
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+.col h4 {
+    padding: 8px 0;
+    font-size: 15px;
+}
+
+.docspic {
+    height: 350px;
+    width: 350px;
+    margin-left: 162px;
+}
+
+.buttn {
+    margin-top: 160px;
+    margin-left: 250px;
+    padding-left: 15px;
+}
