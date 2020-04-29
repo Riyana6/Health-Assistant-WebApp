@@ -49,7 +49,7 @@
                     <div class="col">
                         <img src="images/brand.png" class="ppic" alt="Patient's pro pic"><br>
 
-                        <input class="btn btn-primary btn-lg" type="submit" value="Register">
+                    
                         <div class="buttn">
                             <input class="btn btn-primary btn-lg" type="submit" value="Register">
                             <input class="btn btn-danger btn-lg" type="reset" value="Cancel">
