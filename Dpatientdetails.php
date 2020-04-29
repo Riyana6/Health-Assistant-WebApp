@@ -84,10 +84,7 @@
 
         <div class="col">
             <table cellpadding="5">
-                <tr>
-                    <td><button><a href="newtest.php" target="Frame2">Add New Test</a></button></td>
-                    <td></td>
-                </tr>
+               
                 <tr>
                     <td><label>Full Name: </label></td>
                     <td><input type="text" class="form-control" disabled></td>
@@ -111,6 +108,11 @@
                 <tr>
                     <td><label>DOB: </label></td>
                     <td><input type="text" class="form-control" disabled></td>
+                </tr>
+
+                <tr>
+                    <td><button><a href="newtest.php" target="Frame2">Add New Test</a></button></td>
+                    <td></td>
                 </tr>
             </table>
 
