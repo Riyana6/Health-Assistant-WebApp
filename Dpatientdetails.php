@@ -109,6 +109,14 @@
                     <td><label>DOB: </label></td>
                     <td><input type="text" class="form-control" disabled></td>
                 </tr>
+                <tr>
+                    <td><label>Height(m): </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>Weight(kg): </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
 
                 <tr>
                     <td><button><a href="newtest.php" target="Frame2">Add New Test</a></button></td>

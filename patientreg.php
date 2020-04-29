@@ -19,9 +19,7 @@
             <form>
                 <div class="row">
                     <div class="col">
-                        First Name
-                        <input type="text" class="form-control">
-                        Last Name
+                        Full Name
                         <input type="text" class="form-control">
                         Age
                         <input type="text" class="form-control ">
@@ -43,6 +41,11 @@
                         <input type="text" class="form-control ">
                         DOB
                         <input type='text' class="form-control" />
+                        Height(m)
+                        <input type="text" class="form-control ">
+                        Weight(kg)
+                        <input type='text' class="form-control" />
+
 
 
                     </div>
