@@ -80,9 +80,7 @@
 
     <form name='form' id='' action='' method='post'>
 
-        <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                title="write here syptomes detial.">
-        </h5>
+        
         <div><button><a href="page2.html" target="Frame2">Add New Test</a></button>
         </div>
         <div class="col">
@@ -116,6 +114,9 @@
 
 
         </div>
+        <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                title="write here syptomes detial.">
+        </h5>
         <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
             placeholder='write here syptomes detial.' disabled><br>
 

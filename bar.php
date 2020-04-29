@@ -24,7 +24,7 @@ a:hover {
 <body style="font-size:30px">
     <button><a href="intro.php" target="Frame2">Introduction</a></button>
     <button><a href="search.php" target="Frame2">Patient Profile</a></button>
-    <button><a href="Dpatientdetails" target="Frame2">Doctor Login</a></button>
+    <button><a href="Dpatientdetails.php" target="Frame2">Doctor Login</a></button>
     <button><a href="page2.html" target="Frame2">Register</a></button>
 
 </body>
