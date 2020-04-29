@@ -29,9 +29,7 @@
 						<img src="images/vaccine.png" alt="sing up image" height="200px" width="200px">
 						<p> This is for Patients to sign Up to the account.</p>
 						<div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="REGISTER"/>&nbsp;&nbsp;
-                           &nbsp; Or &nbsp;
-						   <a href="Sign-In.html" ><b>LOGIN</b></a></div>
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="REGISTER"/></div>
 						</figure>
 						
                         
