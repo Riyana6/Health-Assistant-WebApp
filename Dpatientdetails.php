@@ -158,17 +158,6 @@
             </h5>
             <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
                 placeholder='write here Advice detial.' disabled><br>
-            
-            
-
-
-
-            <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGroupFile04"
-                    aria-describedby="inputGroupFileAddon04">
-                <label class="custom-file-label" for="inputGroupFile04">Choose file...(image, x-ray, ECG,
-                    etc...)</label>
-            </div>
 
         </div>
     </form>
