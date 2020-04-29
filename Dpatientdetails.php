@@ -33,6 +33,11 @@
         text-align: center;
 
     }
+
+    input[type="text"] {
+        background: transparent;
+        border: none;
+    }
     </style>
 
 </head>
@@ -80,74 +85,55 @@
 
     <form name='form' id='' action='' method='post'>
 
-        
-        <div><button><a href="page2.html" target="Frame2">Add New Test</a></button>
-        </div>
-        <div class="col">
-            <h4>First Name</h4>
-            <input type="text" class="form-control">
-            <h4>Last Name</h4>
-            <input type="text" class="form-control">
-            <h4>Age</h4>
-            <input type="text" class="form-control ">
-            <h4>Blood Group</h4>
 
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>A+</option>
-                <option>A-</option>
-                <option>B+</option>
-                <option>B-</option>
-                <option>O+</option>
-                <option>O-</option>
-                <option>AB+</option>
-                <option>AB-</option>
-            </select>
-            <h4>Adress</h4>
-            <input type="text" class="form-control ">
-            <h4>NIC</h4>
-            <input type="text" class="form-control ">
-            <h4>DOB</h4>
-            <input type='text' class="form-control" />
+
+        <div class="col">
+            <div><button><a href="newtest.php" target="Frame2">Add New Test</a></button>
+            </div>
+            <h5>Full Name: <input type="text" class="form-control"></h5>
+            <h5>Age: <input type="text" class="form-control "></h5>
+            <h5>Blood Group: <input type="text" class="form-control "></h5>
+            <h5>Address: <input type="text" class="form-control "></h5>
+            <h5>NIC: <input type="text" class="form-control "></h5>
+            <h5>DOB: <input type='text' class="form-control" /></h5>
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-time"></span>
             </span>
+            <br>
+            <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                    title="write here syptomes detial.">
+            </h5>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here syptomes detial.' disabled><br>
+
+            <h5>Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                    data-placement="right" title="write here Causes of the disease detial.">
+            </h5>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here Causes of the disease detial.' disabled><br>
 
 
-        </div>
-        <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                title="write here syptomes detial.">
-        </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here syptomes detial.' disabled><br>
+            <h5>Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                    title="write here Solution detial.">
+            </h5>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here Solution detial.' disabled><br>
 
-        <h5>Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                data-placement="right" title="write here Causes of the disease detial.">
-        </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here Causes of the disease detial.' disabled><br>
-
-
-        <h5>Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                title="write here Solution detial.">
-        </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here Solution detial.' disabled><br>
-
-        <h5>Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                title="write here Approved medication detial.">
-        </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here Approved medication detial.' disabled><br>
+            <h5>Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                    data-placement="right" title="write here Approved medication detial.">
+            </h5>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here Approved medication detial.' disabled><br>
 
 
-        <h5>Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                title="write here Advice detial.">
-        </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here Advice detial.' disabled><br>
+            <h5>Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                    title="write here Advice detial.">
+            </h5>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here Advice detial.' disabled><br>
 
 
-        <div class="input-group">
+
             <div class="custom-file">
                 <input type="file" class="custom-file-input" id="inputGroupFile04"
                     aria-describedby="inputGroupFileAddon04">
@@ -156,8 +142,6 @@
             </div>
 
         </div>
-
-
     </form>
 
 
