@@ -37,6 +37,8 @@
                         <input type="text" class="form-control ">
                         Address
                         <input type="text" class="form-control ">
+                        Password
+                        <input type="text" class="form-control ">
 
                     </div>
                     <div class="col">
