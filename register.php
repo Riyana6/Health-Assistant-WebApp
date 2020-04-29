@@ -11,6 +11,9 @@
     <!-- Main css -->
     <link rel="stylesheet" href="css/style - sum.css">
     <link rel="stylesheet" href="css/poppins.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
 </head>
 
@@ -32,8 +35,13 @@
                                 <img src="images/vaccine.png" alt="sing up image" height="200px" width="200px">
                                 <p> This is for Patients to sign Up to the account.</p>
                                 <div class="form-group form-button">
-                                    <input type="submit" name="signup" id="signup" class="form-submit"
-                                        value="REGISTER" /></div>
+                                    <center>
+                                        <button type="submit" class="btn btn-dark" width="70%">
+                                            <a href="patientreg.php" style="color:white;">Register</a>
+                                        </button>
+                                    </center><input type="submit" name="signup" id="signup" class="form-submit"
+                                        value="REGISTER" />
+                                </div>
                             </figure>
 
 
@@ -45,7 +53,11 @@
                             <img src="images/doctor.png" alt="sing up image" height="200px" width="200px">
                             <p> This is for Doctors to sign Up to the account.</p>
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="REGISTER" />
+                                <center>
+                                    <button type="submit" class="btn btn-dark" width="70%">
+                                        <a href="doctorreg.php" style="color:white;">Register</a>
+                                    </button>
+                                </center>
                             </div>
                         </figure>
 
