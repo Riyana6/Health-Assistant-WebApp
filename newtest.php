@@ -80,53 +80,62 @@
 
     <form name='form' id='' action='' method='post'>
         <div>
-            <h5>Doctor Name <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
-            </h5>
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
-            <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                    title="write here syptomes detial.">
-            </h5>
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                placeholder='write here syptomes detial.'><br>
+            <table cellpadding="5">
 
-            <h5>Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                    data-placement="right" title="write here Causes of the disease detial.">
-            </h5>
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                placeholder='write here Causes of the disease detial.'><br>
+                <tr>
+                    <td><label>Doctor Name: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+            </table>
+            <h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <h5>Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                    title="write here Solution detial.">
-            </h5>
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                placeholder='write here Solution detial.'><br>
-
-            <h5>Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                    data-placement="right" title="write here Approved medication detial.">
-            </h5>
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                placeholder='write here Approved medication detial.'><br>
-
-
-            <h5>Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                    title="write here Advice detial.">
-            </h5>
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                placeholder='write here Advice detial.'><br>
-
-
-            <div class="custom-file">
-                <h5>Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+                <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    style="height:40px; width:200px;" disabled>
+                <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                        title="write here syptomes detial.">
                 </h5>
-                <input type="file" class="custom-file-input" id="inputGroupFile04"
-                    aria-describedby="inputGroupFileAddon04">
-                <label class="custom-file-label" for="inputGroupFile04">Choose file...(image, x-ray, ECG,
-                    etc...)</label>
-            </div>
-            <div class="input-group-append">
-                <button class="btn btn-primary" type="button" id="inputGroupFileAddon04">Upload</button>
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    placeholder='write here syptomes detial.'><br>
 
-            </div>
+                <h5>Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                        data-placement="right" title="write here Causes of the disease detial.">
+                </h5>
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    placeholder='write here Causes of the disease detial.'><br>
+
+                <h5>Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                        title="write here Solution detial.">
+                </h5>
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    placeholder='write here Solution detial.'><br>
+
+                <h5>Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                        data-placement="right" title="write here Approved medication detial.">
+                </h5>
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    placeholder='write here Approved medication detial.'><br>
+
+
+                <h5>Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                        title="write here Advice detial.">
+                </h5>
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    placeholder='write here Advice detial.'><br>
+
+
+                <div class="custom-file">
+                    <h5>Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                            data-placement="right">
+                    </h5>
+                    <input type="file" class="custom-file-input" id="inputGroupFile04"
+                        aria-describedby="inputGroupFileAddon04">
+                    <label class="custom-file-label" for="inputGroupFile04">Choose file...(image, x-ray, ECG,
+                        etc...)</label>
+                </div>
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="inputGroupFileAddon04">Upload</button>
+
+                </div>
         </div>
 
         <div>
@@ -158,25 +167,7 @@
             </div>
         </div>
     </form>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-    $(document).ready(function() {
 
-        $("form input[type=text],form input[type=checkbox]").prop("disabled", true);
-
-        $("input[name=edit]").on("click", function() {
-
-            $("input[type=text],input[type=checkbox],select").removeAttr("disabled");
-        })
-
-        $("input[name=save]").on("click", function() {
-
-            $("input[type=text],input[type=checkbox],select").prop("disabled", true);
-        })
-
-
-    })
-    </script>
 </body>
 
 </html>
