@@ -34,7 +34,7 @@ if(isset($_POST['submit']))
 	$result = mysqli_query($connection,$query);
 	
 	if($result){
-		 header ('location:doctorreg.php');
+		 header ('location:register.php');
 		}else{
 			echo "database query failed.";
 		}

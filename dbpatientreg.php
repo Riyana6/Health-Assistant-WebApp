@@ -26,14 +26,14 @@ if(isset($_POST['submit']))
 	$weight =$_POST['weight'];
   
 	
-	$query = "INSERT INTO doctorreg (fullname , age , nic , mbbsid , workhospital , position , specialist , telephone , address , password)
-				VALUES ('{$fname}','{$age}','{$nic}','{$mbbsid}','{$workhospital}','{$position}','{$specialist}','{$telephone}','{$address}','{$hashed_password}')";
+	$query = "INSERT INTO patientreg (fullname , age , bloodgroup , address , dob , telephone ,nic, height , weight)
+				VALUES ('{$fname}','{$age}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{'$weight'}')";
 				
 	
 	$result = mysqli_query($connection,$query);
 	
 	if($result){
-		 header ('location:doctorreg.php');
+		 header ('location:register.php');
 		}else{
 			echo "database query failed.";
 		}
