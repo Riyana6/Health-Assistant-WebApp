@@ -20,7 +20,7 @@
 	$row = mysqli_fetch_array($result);
 	
 	if($row['nic']==$nic && $row['password']== $hashed_password){
-		header ('location:search.php');
+		header ('location:dsearch.php');
 	}else {
 		echo "login failed.";
 	}
