@@ -35,7 +35,7 @@
                         <input type="text" class="form-control ">
                         Telephone
                         <input type="text" class="form-control ">
-                        Adress
+                        Address
                         <input type="text" class="form-control ">
 
                     </div>

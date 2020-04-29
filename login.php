@@ -29,7 +29,7 @@
 						<img src="images/man.png" height="300px" width="300px" alt="sing up image" >
 						
 						</figure>
-                        <p style="margin-top:80px; " ><b style="font-size:16px;"> << <a href="#Home" class="home_Anchor">Back to Home</a></b></p><br/>
+                        
                     </div>
 
                     <div id="demo3" class="signin-form" >
@@ -50,7 +50,7 @@
                             <div class="form-group form-button">
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="LOGIN"/>
                             </div>OR<br/><br/>
-							<a href="Sign Up Main.html" ><b>Create an account</b></a>
+							<a href="doctorreg.php" ><b>Create an account</b></a>
                         </form>
                         
                     </div>
