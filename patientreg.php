@@ -41,8 +41,6 @@
                         <input type="text" class="form-control ">
                         <h4>NIC</h4>
                         <input type="text" class="form-control ">
-                        <h4>NIC</h4>
-                        <input type="text" class="form-control ">
                         <h4>DOB</h4>
                         <input type='text' class="form-control" />
                         <span class="input-group-addon">
