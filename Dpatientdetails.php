@@ -94,7 +94,7 @@
                     <td><input type="text" class="form-control" disabled></td>
                 </tr>
                 <tr>
-                    <td><label>Blood Group: </label></td>
+                    <td><label>Telephone: </label></td>
                     <td><input type="text" class="form-control" disabled></td>
                 </tr>
                 <tr>
@@ -107,6 +107,10 @@
                 </tr>
                 <tr>
                     <td><label>DOB: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>Blood Group: </label></td>
                     <td><input type="text" class="form-control" disabled></td>
                 </tr>
                 <tr>

@@ -21,8 +21,14 @@
                     <div class="col">
                         Full Name
                         <input type="text" class="form-control">
-                        Age
+                        Telephone
                         <input type="text" class="form-control ">
+                        Address
+                        <input type="text" class="form-control ">
+                        NIC
+                        <input type="text" class="form-control ">
+                        DOB
+                        <input type='text' class="form-control" />
                         Blood Group
 
                         <select class="form-control" id="exampleFormControlSelect1">
@@ -35,12 +41,6 @@
                             <option>AB+</option>
                             <option>AB-</option>
                         </select>
-                        Address
-                        <input type="text" class="form-control ">
-                        NIC
-                        <input type="text" class="form-control ">
-                        DOB
-                        <input type='text' class="form-control" />
                         Height(m)
                         <input type="text" class="form-control ">
                         Weight(kg)
