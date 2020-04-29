@@ -11,8 +11,8 @@
 </head>
 
 <body>
-
-    <h1 style="text-align: center;">Patient's Profile</h1>
+    <hr>
+    <h3 style="text-align: center;">Patient's Profile</h3>
 
     <section id="formdetails">
         <div class="container">
