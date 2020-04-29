@@ -16,29 +16,29 @@
 
     <section id="formdetails">
         <div class="container">
-            <form>
+            <form action="dbdoctorreg.php" method="POST">
                 <div class="row">
                     <div class="col">
                         Full Name
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="fullname">
                         Age
-                        <input type="text" class="form-control ">
+                        <input type="text" class="form-control " name="age">
                         NIC
-                        <input type="text" class="form-control ">
+                        <input type="text" class="form-control " name="nic">
                         MBBS ID
-                        <input type="text" class="form-control ">
+                        <input type="text" class="form-control " name="mbbsid">
                         Work Hospital
-                        <input type="text" class="form-control ">
+                        <input type="text" class="form-control " name="workhospital">
                         Position
-                        <input type="text" class="form-control ">
+                        <input type="text" class="form-control " name="position">
                         Specialist
-                        <input type="text" class="form-control ">
+                        <input type="text" class="form-control " name="specialist">
                         Telephone
-                        <input type="text" class="form-control ">
+                        <input type="text" class="form-control " name="telephone">
                         Address
-                        <input type="text" class="form-control ">
+                        <input type="text" class="form-control " name="address">
                         Password
-                        <input type="text" class="form-control ">
+                        <input type="text" class="form-control " name="password">
 
                     </div>
                     <div class="col">
