@@ -12,20 +12,20 @@
 
 <body>
     <hr>
-    <h3 style="text-align: center;">Patient's Profile</h3>
+    <h5 style="text-align: center;">Patient's Profile</h5>
 
     <section id="formdetails">
         <div class="container">
             <form>
                 <div class="row">
                     <div class="col">
-                        <h4>First Name</h4>
+                        First Name
                         <input type="text" class="form-control">
-                        <h4>Last Name</h4>
+                        Last Name
                         <input type="text" class="form-control">
-                        <h4>Age</h4>
+                        Age
                         <input type="text" class="form-control ">
-                        <h4>Blood Group</h4>
+                        Blood Group
 
                         <select class="form-control" id="exampleFormControlSelect1">
                             <option>A+</option>
@@ -37,25 +37,26 @@
                             <option>AB+</option>
                             <option>AB-</option>
                         </select>
-                        <h4>Adress</h4>
+                        Address
                         <input type="text" class="form-control ">
-                        <h4>NIC</h4>
+                        NIC
                         <input type="text" class="form-control ">
-                        <h4>DOB</h4>
+                        DOB
                         <input type='text' class="form-control" />
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-time"></span>
-                        </span>
 
 
                     </div>
                     <div class="col">
-                        <img src="images/brand.png" class="ppic" alt="Doctor's pro pic">
+                        <img src="images/brand.png" class="ppic" alt="Patient's pro pic"><br>
+
+                        <input class="btn btn-primary btn-lg" type="submit" value="Register">
                         <div class="buttn">
                             <input class="btn btn-primary btn-lg" type="submit" value="Register">
                             <input class="btn btn-danger btn-lg" type="reset" value="Cancel">
 
                         </div>
+
+
 
                     </div>
                 </div>

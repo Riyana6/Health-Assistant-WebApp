@@ -11,32 +11,31 @@
 </head>
 
 <body>
-    <h3 style="text-align: center;">Doctor's Profile</h3>
+    <hr>
+    <h4 style="text-align: center;">Doctor's Profile</h4>
 
     <section id="formdetails">
         <div class="container">
             <form>
                 <div class="row">
                     <div class="col">
-                        <h4>First Name</h4>
+                        Full Name
                         <input type="text" class="form-control">
-                        <h4>Last Name</h4>
-                        <input type="text" class="form-control">
-                        <h4>Age</h4>
+                        Age
                         <input type="text" class="form-control ">
-                        <h4>NIC</h4>
+                        NIC
                         <input type="text" class="form-control ">
-                        <h4>MBBS ID</h4>
+                        MBBS ID
                         <input type="text" class="form-control ">
-                        <h4>Work Hospital</h4>
+                        Work Hospital
                         <input type="text" class="form-control ">
-                        <h4>Position</h4>
+                        Position
                         <input type="text" class="form-control ">
-                        <h4>Specialist</h4>
+                        Specialist
                         <input type="text" class="form-control ">
-                        <h4>Telephone</h4>
+                        Telephone
                         <input type="text" class="form-control ">
-                        <h4>Adress</h4>
+                        Adress
                         <input type="text" class="form-control ">
 
                     </div>
