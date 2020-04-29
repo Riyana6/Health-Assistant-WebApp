@@ -79,54 +79,59 @@
     <h3 class="animated pulse"><u>New Testing</u></h3>
 
     <form name='form' id='' action='' method='post'>
+        <div>
+            <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                    title="write here syptomes detial.">
+            </h5>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here syptomes detial.' disabled><br>
 
-        <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                title="write here syptomes detial.">
-        </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here syptomes detial.' disabled><br>
+            <h5>Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                    data-placement="right" title="write here Causes of the disease detial.">
+            </h5>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here Causes of the disease detial.' disabled><br>
 
-        <h5>Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                data-placement="right" title="write here Causes of the disease detial.">
-        </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here Causes of the disease detial.' disabled><br>
+            <h5>Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                    title="write here Solution detial.">
+            </h5>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here Solution detial.' disabled><br>
 
-        <h5>Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                title="write here Solution detial.">
-        </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here Solution detial.' disabled><br>
-
-        <h5>Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                title="write here Approved medication detial.">
-        </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here Approved medication detial.' disabled><br>
+            <h5>Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                    data-placement="right" title="write here Approved medication detial.">
+            </h5>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here Approved medication detial.' disabled><br>
 
 
-        <h5>Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                title="write here Advice detial.">
-        </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here Advice detial.' disabled><br>
+            <h5>Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                    title="write here Advice detial.">
+            </h5>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here Advice detial.' disabled><br>
 
-        <h5>Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
-        </h5>
-        <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
-        <label class="custom-file-label" for="inputGroupFile04">Choose file...(image, x-ray, ECG,
-            etc...)</label>
 
-        <div class="input-group-append">
-            <button class="btn btn-primary" type="button" id="inputGroupFileAddon04">Upload</button>
+            <div class="custom-file">
+                <h5>Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+                </h5>
+                <input type="file" class="custom-file-input" id="inputGroupFile04"
+                    aria-describedby="inputGroupFileAddon04">
+                <label class="custom-file-label" for="inputGroupFile04">Choose file...(image, x-ray, ECG,
+                    etc...)</label>
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="inputGroupFileAddon04">Upload</button>
 
+            </div>
         </div>
 
-
+        <div>
         <button type="button" style="margin-left: 45%; width: 10%;" class="btn btn-success" data-toggle="modal"
             data-target="#exampleModal">
             Save
         </button></br>
+        </div>
 
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
