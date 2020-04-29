@@ -26,8 +26,7 @@ img{
 </style>
 <h1 align="center" color="red">SEARCH</h1>
 <br>
-<input class="center-block" type="text" value="Enter ID" width="100%" style="opacity: 0.5;"></br></br>
-
-<input class="center-block" type="submit" value="ok">
+<input class="center-block" type="text" placeholder="Enter patient NIC number." style="height:50px; width:300px;opacity:0.5;"><br>  
+<input class="center-block" type="submit" value="Search" style="height:25px; width:70px;">
 </body>
 </html>
