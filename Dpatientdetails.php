@@ -83,14 +83,41 @@
 
 
         <div class="col">
-            <div><button><a href="newtest.php" target="Frame2">Add New Test</a></button>
-            </div>
-            <h5>Full Name: <input type="text" class="form-control"></h5>
-            <h5>Age: <input type="text" class="form-control "></h5>
-            <h5>Blood Group: <input type="text" class="form-control "></h5>
-            <h5>Address: <input type="text" class="form-control "></h5>
-            <h5>NIC: <input type="text" class="form-control "></h5>
-            <h5>DOB: <input type='text' class="form-control" /></h5>
+            <table cellpadding="5">
+                <tr>
+                    <td><button><a href="newtest.php" target="Frame2">Add New Test</a></button></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>Full Name: </label></td>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td><label>Age: </label></td>
+                    <td><input type="text" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Blood Group: </label></td>
+                    <td><input type="text" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Address: </label></td>
+                    <td><input type="text" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>NIC: </label></td>
+                    <td><input type="text" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>DOB: </label></td>
+                    <td><input type="text" class="form-control">
+                    </td>
+                </tr>
+            </table>
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-time"></span>
             </span>
