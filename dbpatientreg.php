@@ -18,15 +18,15 @@ if(isset($_POST['submit']))
 	$fname =$_POST['fullname'];
 	$bloodgroup =$_POST['bloodgroup'];
     $address	=$_POST['address'];
-    $nic =$_POST['nic'];
-	$dob =$_POST['dob'];
+    $dob =$_POST['dob'];
     $telephone	=$_POST['telephone'];
+    $nic =$_POST['nic'];
     $height =$_POST['height'];
 	$weight =$_POST['weight'];
   
 	
-	$query = "INSERT INTO patientreg (fullname  , bloodgroup , address , dob , telephone ,nic, height , weight)
-				VALUES ('{$fname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{'$weight'}')";
+	$query = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight)
+				VALUES ('{$fname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}')";
 				
 	
 	$result = mysqli_query($connection,$query);
