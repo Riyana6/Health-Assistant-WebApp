@@ -20,18 +20,18 @@
                 <div class="row">
                     <div class="col">
                         Full Name
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="fullname">
                         Telephone
-                        <input type="text" class="form-control ">
+                        <input type="text" class="form-control " name="telephone">
                         Address
-                        <input type="text" class="form-control ">
+                        <input type="text" class="form-control " name="address">
                         NIC
-                        <input type="text" class="form-control ">
+                        <input type="text" class="form-control " name="nic">
                         DOB
-                        <input type='text' class="form-control" />
+                        <input type='text' class="form-control " name="dob">
                         Blood Group
 
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select class="form-control" id="exampleFormControlSelect1" name="bloodgroup">
                             <option>A+</option>
                             <option>A-</option>
                             <option>B+</option>
@@ -41,10 +41,10 @@
                             <option>AB+</option>
                             <option>AB-</option>
                         </select>
-                        Height(m)
-                        <input type="text" class="form-control ">
+                        Height(cm)
+                        <input type="text" class="form-control " name="height">
                         Weight(kg)
-                        <input type='text' class="form-control" />
+                        <input type='text' class="form-control" name="weight">
 
 
 
@@ -54,8 +54,8 @@
 
                     
                         <div class="buttn">
-                            <input class="btn btn-primary btn-lg" type="submit" value="Register">
-                            <input class="btn btn-danger btn-lg" type="reset" value="Cancel">
+                            <input class="btn btn-primary btn-lg" type="submit" value="Register" name="submit">
+                            <a href="register.php"><input class="btn btn-danger btn-lg" type="reset" value="Cancel"></a>
 
                         </div>
 

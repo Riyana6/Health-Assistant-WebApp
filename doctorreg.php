@@ -45,7 +45,7 @@
                         <img src="images/brand.png" class="docspic" alt="Doctor's pro pic">
                         <div class="buttn">
                             <input class="btn btn-primary btn-lg" type="submit" value="Register" name="submit">
-                            <a href="doctorreg.php"><input class="btn btn-danger btn-lg" type="reset" value="Cancel" ></a>
+                            <a href="register.php"><input class="btn btn-danger btn-lg" type="reset" value="Cancel" ></a>
 
                         </div>
 
