@@ -16,7 +16,7 @@
 
     <section id="formdetails">
         <div class="container">
-            <form>
+            <form action="dbpatientreg.php" method="POST">
                 <div class="row">
                     <div class="col">
                         Full Name
