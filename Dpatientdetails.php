@@ -94,57 +94,56 @@
                 </tr>
                 <tr>
                     <td><label>Age: </label></td>
-                    <td><input type="text" class="form-control" disabled>
-                    </td>
+                    <td><input type="text" class="form-control" disabled></td>
                 </tr>
                 <tr>
                     <td><label>Blood Group: </label></td>
-                    <td><input type="text" class="form-control" disabled>
-                    </td>
+                    <td><input type="text" class="form-control" disabled></td>
                 </tr>
                 <tr>
                     <td><label>Address: </label></td>
-                    <td><input type="text" class="form-control" disabled>
-                    </td>
+                    <td><input type="text" class="form-control" disabled></td>
                 </tr>
                 <tr>
                     <td><label>NIC: </label></td>
-                    <td><input type="text" class="form-control" disabled>
-                    </td>
+                    <td><input type="text" class="form-control" disabled></td>
                 </tr>
                 <tr>
                     <td><label>DOB: </label></td>
-                    <td><input type="text" class="form-control" disabled>
-                    </td>
+                    <td><input type="text" class="form-control" disabled></td>
                 </tr>
             </table>
-           
+
             <br>
-            <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
-            </h5>
+            <h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+            <input type='text'  id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;" disabled><br>
+
+            Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
             <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
 
-            <h5>Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"data-placement="right" >
-            </h5>
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
+            Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                data-placement="right">
 
-
-            <h5>Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
-            </h5>
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
-
-            <h5>Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                    data-placement="right">
-            </h5>
             <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
 
 
-            <h5>Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
-            </h5>
+            Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
             <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
-            
-            <h5>Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
-            </h5>
+
+            Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
+
+
+            Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
+
+            Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
             <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
 
         </div>
