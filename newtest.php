@@ -111,23 +111,22 @@
         <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
             placeholder='write here Advice detial.' disabled><br>
 
-        <div class="input-group">
-            <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGroupFile04"
-                    aria-describedby="inputGroupFileAddon04">
-                <label class="custom-file-label" for="inputGroupFile04">Choose file...(image, x-ray, ECG,
-                    etc...)</label>
-            </div>
-            <div class="input-group-append">
-                <button class="btn btn-primary" type="button" id="inputGroupFileAddon04">Upload</button>
+        <h5>Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+        </h5>
+        <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+        <label class="custom-file-label" for="inputGroupFile04">Choose file...(image, x-ray, ECG,
+            etc...)</label>
 
-            </div>
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="button" id="inputGroupFileAddon04">Upload</button>
+
         </div>
-    
+
+
         <button type="button" style="margin-left: 45%; width: 10%;" class="btn btn-success" data-toggle="modal"
             data-target="#exampleModal">
             Save
-        </button>
+        </button></br>
 
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
