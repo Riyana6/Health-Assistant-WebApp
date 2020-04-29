@@ -90,7 +90,7 @@
             <h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
                 <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    style="height:40px; width:200px;" disabled>
+                    style="height:40px; width:200px;">
                 <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
                         title="write here syptomes detial.">
                 </h5>
