@@ -16,7 +16,6 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
 if(isset($_POST['submit']))
 {
 	$fname =$_POST['fullname'];
-	$age =$_POST['age'];
 	$bloodgroup =$_POST['bloodgroup'];
     $address	=$_POST['address'];
     $nic =$_POST['nic'];
@@ -26,8 +25,8 @@ if(isset($_POST['submit']))
 	$weight =$_POST['weight'];
   
 	
-	$query = "INSERT INTO patientreg (fullname , age , bloodgroup , address , dob , telephone ,nic, height , weight)
-				VALUES ('{$fname}','{$age}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{'$weight'}')";
+	$query = "INSERT INTO patientreg (fullname  , bloodgroup , address , dob , telephone ,nic, height , weight)
+				VALUES ('{$fname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{'$weight'}')";
 				
 	
 	$result = mysqli_query($connection,$query);

@@ -78,13 +78,9 @@
 
         <div class="col">
             <table cellpadding="5">
-               
+
                 <tr>
                     <td><label>Full Name: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-                <tr>
-                    <td><label>Age: </label></td>
                     <td><input type="text" class="form-control" disabled></td>
                 </tr>
                 <tr>
@@ -120,34 +116,42 @@
             <br>
             <h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text'  id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;" disabled><br>
+                <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    style="height:40px; width:200px;" disabled><br>
 
-            Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+                Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    disabled><br>
 
-            Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                data-placement="right">
+                Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                    data-placement="right">
 
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
-
-
-            Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
-
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
-
-            Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
-
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    disabled><br>
 
 
-            Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+                Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    disabled><br>
 
-            Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+                Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                    data-placement="right">
 
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    disabled><br>
+
+
+                Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    disabled><br>
+
+                Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    disabled><br>
 
         </div>
     </form>
