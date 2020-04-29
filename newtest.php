@@ -80,36 +80,39 @@
 
     <form name='form' id='' action='' method='post'>
         <div>
+            <h5>Doctor Name <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+            </h5>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
             <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
                     title="write here syptomes detial.">
             </h5>
             <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                placeholder='write here syptomes detial.' disabled><br>
+                placeholder='write here syptomes detial.'><br>
 
             <h5>Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
                     data-placement="right" title="write here Causes of the disease detial.">
             </h5>
             <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                placeholder='write here Causes of the disease detial.' disabled><br>
+                placeholder='write here Causes of the disease detial.'><br>
 
             <h5>Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
                     title="write here Solution detial.">
             </h5>
             <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                placeholder='write here Solution detial.' disabled><br>
+                placeholder='write here Solution detial.'><br>
 
             <h5>Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
                     data-placement="right" title="write here Approved medication detial.">
             </h5>
             <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                placeholder='write here Approved medication detial.' disabled><br>
+                placeholder='write here Approved medication detial.'><br>
 
 
             <h5>Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
                     title="write here Advice detial.">
             </h5>
             <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                placeholder='write here Advice detial.' disabled><br>
+                placeholder='write here Advice detial.'><br>
 
 
             <div class="custom-file">
@@ -127,10 +130,10 @@
         </div>
 
         <div>
-        <button type="button" style="margin-left: 45%; width: 10%;" class="btn btn-success" data-toggle="modal"
-            data-target="#exampleModal">
-            Save
-        </button></br>
+            <button type="button" style="margin-left: 45%; width: 10%;" class="btn btn-success" data-toggle="modal"
+                data-target="#exampleModal">
+                Save
+            </button></br>
         </div>
 
 
