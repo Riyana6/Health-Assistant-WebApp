@@ -85,6 +85,37 @@
         </h5>
         <div><button><a href="page2.html" target="Frame2">Add New Test</a></button>
         </div>
+        <div class="col">
+            <h4>First Name</h4>
+            <input type="text" class="form-control">
+            <h4>Last Name</h4>
+            <input type="text" class="form-control">
+            <h4>Age</h4>
+            <input type="text" class="form-control ">
+            <h4>Blood Group</h4>
+
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+            </select>
+            <h4>Adress</h4>
+            <input type="text" class="form-control ">
+            <h4>NIC</h4>
+            <input type="text" class="form-control ">
+            <h4>DOB</h4>
+            <input type='text' class="form-control" />
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-time"></span>
+            </span>
+
+
+        </div>
         <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
             placeholder='write here syptomes detial.' disabled><br>
 
