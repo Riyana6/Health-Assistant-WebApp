@@ -31,16 +31,7 @@
                         <input type='text' class="form-control " name="dob">
                         Blood Group
 
-                        <select class="form-control" id="exampleFormControlSelect1" name="bloodgroup">
-                            <option>A+</option>
-                            <option>A-</option>
-                            <option>B+</option>
-                            <option>B-</option>
-                            <option>O+</option>
-                            <option>O-</option>
-                            <option>AB+</option>
-                            <option>AB-</option>
-                        </select>
+                        <input type="text" class="form-control"  name="bloodgroup">
                         Height(cm)
                         <input type="text" class="form-control " name="height">
                         Weight(kg)
@@ -52,7 +43,7 @@
                     <div class="col">
                         <img src="images/brand.png" class="ppic" alt="Patient's pro pic"><br>
 
-                    
+
                         <div class="buttn">
                             <input class="btn btn-primary btn-lg" type="submit" value="Register" name="submit">
                             <a href="register.php"><input class="btn btn-danger btn-lg" type="reset" value="Cancel"></a>
