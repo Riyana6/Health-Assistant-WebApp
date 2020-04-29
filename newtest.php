@@ -53,15 +53,15 @@
 
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img src="hospital-medicine-icon-png-favpng-r1z9JHyesUSmRqNn7WL3xkb7Q.png" width="40" height="40"
+                <img src="hospital-medicine-icon-png-favpng-r1z9JHyesUSmRqNn7WL3xkb7Q.png" width="50" height="50"
                     class="d-inline-block align-top" alt="">
                 Patient profile
             </a>
 
-            <a href="" style="margin-left: 75%;">
+            <a href="" style="margin-left: 55%;">
 
                 <img src="doctor-icon-medical-icon-people-icon-black-symbol-cross-logo-circle-png-clip-art.png"
-                    width="30" height="30" class="d-inline-block align-top" alt="">
+                    width="100" height="100" class="d-inline-block align-top" alt="">
             </a>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
