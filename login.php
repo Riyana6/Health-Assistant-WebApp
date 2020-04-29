@@ -34,17 +34,17 @@
 
                     <div id="demo3" class="signin-form" >
                         <h2 class="form-title" >SIGN IN</h2>
-                        <form method="POST" class="register-form" id="login-form">
+                        <form method="POST" class="register-form" id="login-form" action="dbdoctorlogin.php">
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i><b>&nbsp;&nbsp;&nbsp;NAME</b></label>
-                                <input type="text" name="your_name" id="your_name" placeholder="User Name or Email" required/>
+                                <input type="text" name="nic" placeholder="Please enter NIC no." required/>
                             </div>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i><b>&nbsp;&nbsp;&nbsp;PSW</b></label>
-                                <input type="password" name="your_pass" id="your_pass" placeholder="Password" required/>
+                                <input type="password" name="password" placeholder="Password" required/>
                             </div>
                             <div class="form-group form-button">
-                                <input type="submit" name="signin" id="signin" class="form-submit" value="LOGIN"/>
+                                <input type="submit" name="submit" id="signin" class="form-submit" value="LOGIN"/>
                             </div>OR<br/><br/>
 							<a href="doctorreg.php" ><b>Create an account</b></a>
                         </form>
