@@ -26,7 +26,7 @@
         <!-- Sing in  Form -->
         <section class="sign-up">
             <div class="container">
-                <h2 class="form-title">SIGN UP</h2>
+
                 <div class="signup-content">
                     <div id="demo" class="signup-form">
                         <div class="card">
@@ -39,8 +39,7 @@
                                         <button type="submit" class="btn btn-dark" width="70%">
                                             <a href="patientreg.php" style="color:white;">Register</a>
                                         </button>
-                                    </center><input type="submit" name="signup" id="signup" class="form-submit"
-                                        value="REGISTER" />
+                                    </center>
                                 </div>
                             </figure>
 
@@ -66,10 +65,7 @@
 
 
                 </div>
-                <p style="margin-top:-20px; margin-bottom:20px; "><b style="font-size:16px;">
-                        << <a href="#Home" class="home_Anchor">Back to Home</a>
-                    </b></p><br />
-
+            </div>
         </section>
 
     </div>
