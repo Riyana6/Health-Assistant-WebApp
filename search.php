@@ -18,8 +18,8 @@ img{
 }
 </style>
 <h1 align="center" color="red">SEARCH</h1>
-<hr>
-<input type="text" value="Enter ID" width="70%"style="opacity: 0.5;"></br></br></br></br>
+<br>
+<input type="text" value="Enter ID" width="80%" style="opacity: 0.5;"></br></br>
 <input type="submit" value="ok">
 </body>
 </html>

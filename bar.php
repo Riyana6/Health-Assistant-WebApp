@@ -7,8 +7,8 @@
 button {
     background-color: orange;
     width: 90%;
-    padding: 30px;
-    margin: 10px;
+    padding: 40px;
+    margin: 20px;
 }
 
 a {
@@ -21,7 +21,7 @@ a:hover {
 }
 </style>
 
-<body style="font-size:60px">
+<body style="font-size:30px">
     <button><a href="intro.php" target="Frame2">Introduction</a></button>
     <button><a href="search.php" target="Frame2">Patient Profile</a></button>
     <button><a href="page5.html" target="Frame2">Doctor Login</a></button>
