@@ -26,7 +26,9 @@ img{
 </style>
 <h1 align="center" color="red">SEARCH</h1>
 <br>
-<input class="center-block" type="text" placeholder="Enter patient NIC number." style="height:50px; width:300px;opacity:0.5;"><br>  
-<input class="center-block" type="submit" value="Search" style="height:25px; width:70px;">
+<form action="dbsearch.php" method="POST">
+<input class="center-block" type="text" name="nic" placeholder="Enter patient NIC number." style="height:50px; width:300px;opacity:0.5;"><br>  
+<input class="center-block" type="submit" name="submit" value="Search" style="height:25px; width:70px;">
+</form>
 </body>
 </html>
