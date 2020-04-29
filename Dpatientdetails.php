@@ -33,11 +33,6 @@
         text-align: center;
 
     }
-
-    input[type="text"] {
-        background: transparent;
-        border: none;
-    }
     </style>
 
 </head>
