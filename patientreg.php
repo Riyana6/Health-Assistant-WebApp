@@ -19,7 +19,7 @@
             <form action="dbpatientreg.php" method="POST" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col">
-                        <table>
+                        <table style=cellpadding="5">
                             <tr>
                                 <td>Full Name</td>
                                 <td><input type="text" class="form-control" name="fullname"></td>
@@ -54,8 +54,7 @@
                             </tr>
                             <tr>
                                 <td>Image</td>
-                                <td><input name="uploadedimage" type="file"><input name="Upload Now" type="submit"
-                                        value="Upload Image"></td>
+                                <td><input name="myimage" type="file"></td>
                             </tr>
 
 

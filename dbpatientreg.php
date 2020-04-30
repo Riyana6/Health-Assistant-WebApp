@@ -23,10 +23,11 @@ if(isset($_POST['submit']))
     $nic =$_POST['nic'];
     $height =$_POST['height'];
 	$weight =$_POST['weight'];
-  
+    $imagename=$_FILES["myimage"]["image_path"]; 
+    $imagetmp=addslashes (file_get_contents($_FILES['myimage']['imgtmp_name']));
 	
-	$query = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight)
-				VALUES ('{$fname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}')";
+	$query = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image_path,imgtmp_name)
+				VALUES ('{$fname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$imagename}','{$imagetmp}')";
 				
 	
 	$result = mysqli_query($connection,$query);
@@ -35,7 +36,19 @@ if(isset($_POST['submit']))
 		 header ('location:register.php');
 		}else{
 			echo "database query failed.";
-		}
+        }
+        
+
+        
+
+
+
 }
+
+
+
+
+
+ 
 
 ?>
