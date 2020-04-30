@@ -16,7 +16,7 @@
 	$row = mysqli_fetch_array($result);
 	
 	if($row['nic']==$nic){
-		header ('Vpatientdetails.php');
+		header ('location:Vpatientdetails.php');
 	}else {
 		echo "login failed.";
 	}
