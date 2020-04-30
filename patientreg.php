@@ -54,7 +54,9 @@
                             </tr>
                             <tr>
                                 <td>Image</td>
-                                <td><input name="myimage" type="file"></td>
+                                <td><input name="image" type="file"><textarea id="text" cols="40" rows="4"
+                                        name="image_text" placeholder="Say something about this image..."></textarea>
+                                </td>
                             </tr>
 
 

@@ -23,20 +23,29 @@ if(isset($_POST['submit']))
     $nic =$_POST['nic'];
     $height =$_POST['height'];
 	$weight =$_POST['weight'];
-    $imagename=$_FILES["myimage"]["image_path"]; 
-    $imagetmp=addslashes (file_get_contents($_FILES['myimage']['imgtmp_name']));
-	
-	$query = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image_path,imgtmp_name)
-				VALUES ('{$fname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$imagename}','{$imagetmp}')";
+    $image = $_FILES['image']['name'];
+  	// Get text
+  	$image_text = mysqli_real_escape_string($db, $_POST['image_text']);
+
+  	// image file directory
+  	$target = "images/".basename($image);
+    
+   
+   
+    $msg = "";
+	$query = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,image_text)
+				VALUES ('{$fname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$image}','{$image_text}')";
 				
 	
-	$result = mysqli_query($connection,$query);
+                mysqli_query($connection, $query);
+
+                if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+                    header ('location:register.php');
+                }else{
+                    $msg = "Failed to upload";
+                }
+
 	
-	if($result){
-		 header ('location:register.php');
-		}else{
-			echo "database query failed.";
-        }
         
 
         
