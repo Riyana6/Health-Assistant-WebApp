@@ -26,18 +26,30 @@ if(isset($_POST['submit']))
     $address =$_POST['address'];
 	$pass =$_POST['password'];
     $hashed_password = sha1($pass);
+    $image = $_FILES['image']['name'];
+    // Get text
+    
+
+    // image file directory
+    $target = "images/".basename($image);
+  
+ 
+ 
+  $msg = "";
 	
-	$query = "INSERT INTO doctorreg (fullname , age , nic , mbbsid , workhospital , position , specialist , telephone , address , password)
-				VALUES ('{$fname}','{$age}','{$nic}','{$mbbsid}','{$workhospital}','{$position}','{$specialist}','{$telephone}','{$address}','{$hashed_password}')";
+	$query = "INSERT INTO doctorreg (fullname , age , nic , mbbsid , workhospital , position , specialist , telephone , address , password,image)
+				VALUES ('{$fname}','{$age}','{$nic}','{$mbbsid}','{$workhospital}','{$position}','{$specialist}','{$telephone}','{$address}','{$hashed_password}','{$image}')";
 				
 	
 	$result = mysqli_query($connection,$query);
 	
-	if($result){
-		 header ('location:register.php');
-		}else{
-			echo "database query failed.";
-		}
+	
+    if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+        header ('location:register.php');
+    }else{
+        $msg = "Failed to upload";
+    }
+
 }
 
 ?>

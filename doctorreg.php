@@ -16,36 +16,60 @@
 
     <section id="formdetails">
         <div class="container">
-            <form action="dbdoctorreg.php" method="POST">
+            <form action="dbdoctorreg.php" method="POST" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col">
-                        Full Name
-                        <input type="text" class="form-control" name="fullname">
-                        Age
-                        <input type="text" class="form-control " name="age">
-                        NIC
-                        <input type="text" class="form-control " name="nic">
-                        MBBS ID
-                        <input type="text" class="form-control " name="mbbsid">
-                        Work Hospital
-                        <input type="text" class="form-control " name="workhospital">
-                        Position
-                        <input type="text" class="form-control " name="position">
-                        Specialist
-                        <input type="text" class="form-control " name="specialist">
-                        Telephone
-                        <input type="text" class="form-control " name="telephone">
-                        Address
-                        <input type="text" class="form-control " name="address">
-                        Password
-                        <input type="text" class="form-control " name="password">
+                        <table style=cellpadding="5">
+                            <tr>
+                                <td>Full Name</td>
+                                <td><input type="text" class="form-control" name="fullname"></td>
+                            </tr>
+                            <tr>
+                                <td>Age</td>
+                                <td><input type="text" class="form-control " name="age"></td>
+                            </tr>
+                            <tr>
+                                <td>NIC</td>
+                                <td><input type="text" class="form-control " name="nic"></td>
+                            </tr>
+                            <tr>
+                                <td>MBBS ID</td>
+                                <td><input type="text" class="form-control " name="mbbsid"></td>
+                            </tr>
+                            <tr>
+                                <td>Work Hospital</td>
+                                <td><input type="text" class="form-control " name="workhospital"></td>
+                            </tr>
+                            <tr>
+                                <td>Position</td>
+                                <td><input type="text" class="form-control " name="position"></td>
+                            </tr>
+                            <tr>
+                                <td>Specialist</td>
+                                <td><input type="text" class="form-control " name="specialist"></td>
+                            </tr>
+                            <tr>
+                                <td>Telephone</td>
+                                <td><input type="text" class="form-control " name="telephone"></td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td><input type="text" class="form-control " name="address"></td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td><input type="text" class="form-control " name="password"></td>
+                            </tr>
+                            <tr>
+                                <td>Image</td>
+                                <td><input name="image" type="file"></td>
 
-                    </div>
-                    <div class="col">
-                        <img src="images/brand.png" class="docspic" alt="Doctor's pro pic">
+                            </tr>
+                        </table>
+
                         <div class="buttn">
                             <input class="btn btn-primary btn-lg" type="submit" value="Register" name="submit">
-                            <a href="register.php"><input class="btn btn-danger btn-lg" type="reset" value="Cancel" ></a>
+                            <a href="register.php"><input class="btn btn-danger btn-lg" type="reset" value="Cancel"></a>
 
                         </div>
 
