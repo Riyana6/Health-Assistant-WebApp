@@ -16,7 +16,7 @@
 
     <section id="formdetails">
         <div class="container">
-            <form action="dbpatientreg.php" method="POST">
+            <form action="dbpatientreg.php" method="POST" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col">
                         <table>
@@ -51,13 +51,15 @@
                             <tr>
                                 <td>Weight(kg)</td>
                                 <td><input type='text' class="form-control" name="weight"></td>
+                            </tr>
+                            <tr>
+                                <td>Image</td>
+                                <td><input name="uploadedimage" type="file"><input name="Upload Now" type="submit"
+                                        value="Upload Image"></td>
+                            </tr>
+
+
                         </table>
-
-
-                    </div>
-                    <div class="col">
-                        <img src="images/brand.png" class="ppic" alt="Patient's pro pic"><br>
-
 
                         <div class="buttn">
                             <input class="btn btn-primary btn-lg" type="submit" value="Register" name="submit">
