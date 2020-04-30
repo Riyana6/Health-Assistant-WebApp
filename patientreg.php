@@ -19,24 +19,39 @@
             <form action="dbpatientreg.php" method="POST">
                 <div class="row">
                     <div class="col">
-                        Full Name
-                        <input type="text" class="form-control" name="fullname">
-                        Telephone
-                        <input type="text" class="form-control " name="telephone">
-                        Address
-                        <input type="text" class="form-control " name="address">
-                        NIC
-                        <input type="text" class="form-control " name="nic">
-                        DOB
-                        <input type='text' class="form-control " name="dob">
-                        Blood Group
-
-                        <input type="text" class="form-control"  name="bloodgroup">
-                        Height(cm)
-                        <input type="text" class="form-control " name="height">
-                        Weight(kg)
-                        <input type='text' class="form-control" name="weight">
-
+                        <table>
+                            <tr>
+                                <td>Full Name</td>
+                                <td><input type="text" class="form-control" name="fullname"></td>
+                            </tr>
+                            <tr>
+                                <td> Telephone</td>
+                                <td><input type="text" class="form-control " name="telephone"></td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td><input type="text" class="form-control " name="address"></td>
+                            </tr>
+                            <tr>
+                                <td>NIC</td>
+                                <td><input type="text" class="form-control " name="nic"></td>
+                            </tr>
+                            <tr>
+                                <td>DOB</td>
+                                <td><input type='text' class="form-control " name="dob"></td>
+                            </tr>
+                            <tr>
+                                <td>Blood Group</td>
+                                <td><input type="text" class="form-control" name="bloodgroup"></td>
+                            </tr>
+                            <tr>
+                                <td>Height(cm)</td>
+                                <td><input type="text" class="form-control " name="height"></td>
+                            </tr>
+                            <tr>
+                                <td>Weight(kg)</td>
+                                <td><input type='text' class="form-control" name="weight"></td>
+                        </table>
 
 
                     </div>
