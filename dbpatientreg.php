@@ -25,7 +25,7 @@ if(isset($_POST['submit']))
 	$weight =$_POST['weight'];
     $image = $_FILES['image']['name'];
   	// Get text
-  	$image_text = mysqli_real_escape_string($db, $_POST['image_text']);
+  	
 
   	// image file directory
   	$target = "images/".basename($image);
