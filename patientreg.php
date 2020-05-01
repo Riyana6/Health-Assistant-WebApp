@@ -71,60 +71,106 @@
                         </table>
 
 
-                        <br>
-                        <h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                                data-placement="right">
+                        <form name='form' id='' action='' method='post'>
+                            <div>
+                                <table cellpadding="5">
 
-                            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                                style="height:40px; width:200px;" ><br>
+                                    <tr>
+                                        <td><label>Doctor Name: </label></td>
+                                        <td><input type="text" class="form-control" disabled></td>
+                                    </tr>
+                                </table>
+                                <h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                                        data-placement="right">
 
-                            Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                                data-placement="right">
+                                    <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                                        style="height:40px; width:200px;">
+                                    <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                                            data-placement="right" title="write here syptomes detial.">
+                                    </h5>
+                                    <input type='text' name='txt_category' id='category'
+                                        class="shadow p-3 mb-5 bg-white rounded"
+                                        placeholder='write here syptomes detial.'><br>
 
-                            <input type='text' name='txt_category' id='category'
-                                class="shadow p-3 mb-5 bg-white rounded" ><br>
+                                    <h5>Causes of the disease <img src="contact_support-24px.svg" alt=""
+                                            data-toggle="tooltip" data-placement="right"
+                                            title="write here Causes of the disease detial.">
+                                    </h5>
+                                    <input type='text' name='txt_category' id='category'
+                                        class="shadow p-3 mb-5 bg-white rounded"
+                                        placeholder='write here Causes of the disease detial.'><br>
 
-                            Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                                data-placement="right">
+                                    <h5>Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                                            data-placement="right" title="write here Solution detial.">
+                                    </h5>
+                                    <input type='text' name='txt_category' id='category'
+                                        class="shadow p-3 mb-5 bg-white rounded"
+                                        placeholder='write here Solution detial.'><br>
 
-                            <input type='text' name='txt_category' id='category'
-                                class="shadow p-3 mb-5 bg-white rounded" ><br>
-
-
-                            Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                                data-placement="right">
-
-                            <input type='text' name='txt_category' id='category'
-                                class="shadow p-3 mb-5 bg-white rounded" ><br>
-
-                            Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                                data-placement="right">
-
-                            <input type='text' name='txt_category' id='category'
-                                class="shadow p-3 mb-5 bg-white rounded" ><br>
-
-
-                            Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                                data-placement="right">
-
-                            <input type='text' name='txt_category' id='category'
-                                class="shadow p-3 mb-5 bg-white rounded" ><br>
-
-                            Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                                data-placement="right">
-
-                            <input type='text' name='txt_category' id='category'
-                                class="shadow p-3 mb-5 bg-white rounded" ><br>
+                                    <h5>Approved medication <img src="contact_support-24px.svg" alt=""
+                                            data-toggle="tooltip" data-placement="right"
+                                            title="write here Approved medication detial.">
+                                    </h5>
+                                    <input type='text' name='txt_category' id='category'
+                                        class="shadow p-3 mb-5 bg-white rounded"
+                                        placeholder='write here Approved medication detial.'><br>
 
 
-                            <div class="buttn">
-                                <input class="btn btn-primary btn-lg" type="submit" value="Register" name="submit">
-                                <a href="register.php"><input class="btn btn-danger btn-lg" type="reset"
-                                        value="Cancel"></a>
+                                    <h5>Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                                            data-placement="right" title="write here Advice detial.">
+                                    </h5>
+                                    <input type='text' name='txt_category' id='category'
+                                        class="shadow p-3 mb-5 bg-white rounded"
+                                        placeholder='write here Advice detial.'><br>
 
+
+                                    <div class="custom-file">
+                                        <h5>Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                                                data-placement="right">
+                                        </h5>
+                                        <input type="file" class="custom-file-input" id="inputGroupFile04"
+                                            aria-describedby="inputGroupFileAddon04">
+                                        <label class="custom-file-label" for="inputGroupFile04">Choose file...(image,
+                                            x-ray, ECG,
+                                            etc...)</label>
+                                    </div>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button"
+                                            id="inputGroupFileAddon04">Upload</button>
+
+                                    </div>
+                            </div>
+
+                            <div>
+                                <button type="button" style="margin-left: 45%; width: 10%;" class="btn btn-success"
+                                    data-toggle="modal" data-target="#exampleModal">
+                                    Save
+                                </button></br>
                             </div>
 
 
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Save and change</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            This details all correct.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
 
                     </div>
                 </div>

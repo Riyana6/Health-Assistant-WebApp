@@ -53,17 +53,11 @@
 
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img src="hospital-medicine-icon-png-favpng-r1z9JHyesUSmRqNn7WL3xkb7Q.png" alt=""
-                    style="width:75px;height:90px;">
-                Patient profile </a>
-            <table align="center" style="margin: 0px auto;">
-                <tr>
-                    <td><input class="center-block" type="text" name="nic" placeholder="Enter patient NIC number."
-                            style="height:50px; width:300px;opacity:0.5;"></td>
-                    <td><input class="center-block" type="submit" name="submit" value="Search"
-                            style="height:25px; width:70px;"></td>
-                </tr>
-            </table>
+                <img src="hospital-medicine-icon-png-favpng-r1z9JHyesUSmRqNn7WL3xkb7Q.png" width="30" height="30"
+                    class="d-inline-block align-top" alt="">
+                Patient profile
+            </a>
+
             <a href="" style="margin-left: 75%;">
 
                 <img src="doctor-icon-medical-icon-people-icon-black-symbol-cross-logo-circle-png-clip-art.png"
@@ -75,9 +69,9 @@
                     User_name
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="patientreg.php">Help&Contact</a>
+                    <a class="dropdown-item" href="#">Profile</a>
                     <a class="dropdown-item" href="#">Help&Contact</a>
-                    <a class="dropdown-item" href="login.php">LogOut</a>
+                    <a class="dropdown-item" href="#">LogOut</a>
                 </div>
             </div>
         </nav>
@@ -90,85 +84,67 @@
 
         <div class="col">
             <table cellpadding="5">
-
-                <tr>
-                    <td><label>Full Name: </label></td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td><label>Telephone: </label></td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td><label>Address: </label></td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td><label>NIC: </label></td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td><label>DOB: </label></td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td><label>Blood Group: </label></td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td><label>Height(m): </label></td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-                <tr>
-                    <td><label>Weight(kg): </label></td>
-                    <td><input type="text" class="form-control"></td>
-                </tr>
-
                 <tr>
                     <td><button><a href="newtest.php" target="Frame2">Add New Test</a></button></td>
                     <td></td>
                 </tr>
+                <tr>
+                    <td><label>Full Name: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>Age: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>Blood Group: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>Address: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>NIC: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>DOB: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
             </table>
 
             <br>
-            <h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+            Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-                <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    style="height:40px; width:200px;" disabled><br>
+            <input type='text'  id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;" disabled><br>
 
-                Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+            Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
 
-                Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                    data-placement="right">
+            Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                data-placement="right">
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
 
 
-                Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+            Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
 
-                Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                    data-placement="right">
+            Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
 
 
-                Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+            Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
 
-                Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+            Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled><br>
 
         </div>
     </form>
