@@ -56,7 +56,7 @@
                 <img src="hospital-medicine-icon-png-favpng-r1z9JHyesUSmRqNn7WL3xkb7Q.png" alt=""
                     style="width:75px;height:90px;">
                 Patient profile </a>
-            <table style="float:right">
+            <table align="center" style="margin: 0px auto;">
                 <tr>
                     <td><input class="center-block" type="text" name="nic" placeholder="Enter patient NIC number."
                             style="height:50px; width:300px;opacity:0.5;"></td>
@@ -75,7 +75,7 @@
                     User_name
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-
+                    <a class="dropdown-item" href="patientreg.php">Help&Contact</a>
                     <a class="dropdown-item" href="#">Help&Contact</a>
                     <a class="dropdown-item" href="login.php">LogOut</a>
                 </div>
@@ -93,35 +93,35 @@
 
                 <tr>
                     <td><label>Full Name: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
+                    <td><input type="text" class="form-control"></td>
                 </tr>
                 <tr>
                     <td><label>Telephone: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
+                    <td><input type="text" class="form-control"></td>
                 </tr>
                 <tr>
                     <td><label>Address: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
+                    <td><input type="text" class="form-control"></td>
                 </tr>
                 <tr>
                     <td><label>NIC: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
+                    <td><input type="text" class="form-control"></td>
                 </tr>
                 <tr>
                     <td><label>DOB: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
+                    <td><input type="text" class="form-control"></td>
                 </tr>
                 <tr>
                     <td><label>Blood Group: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
+                    <td><input type="text" class="form-control"></td>
                 </tr>
                 <tr>
                     <td><label>Height(m): </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
+                    <td><input type="text" class="form-control"></td>
                 </tr>
                 <tr>
                     <td><label>Weight(kg): </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
+                    <td><input type="text" class="form-control"></td>
                 </tr>
 
                 <tr>
