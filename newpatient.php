@@ -154,7 +154,7 @@
 
             Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
+            <input type='file' name='file' id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
         </div>
     </form>
