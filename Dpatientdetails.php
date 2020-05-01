@@ -84,7 +84,7 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="newpatient.php">New Patient</a>
                     <a class="dropdown-item" href="#">Help&Contact</a>
-                    <a class="dropdown-item" href="#">LogOut</a>
+                    <a class="dropdown-item" href="login.php">LogOut</a>
                 </div>
             </div>
         </nav>

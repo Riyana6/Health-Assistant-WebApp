@@ -81,7 +81,7 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
                     <a class="dropdown-item" href="#">Help&Contact</a>
-                    <a class="dropdown-item" href="#">LogOut</a>
+                    <a class="dropdown-item" href="login.php">LogOut</a>
                 </div>
             </div>
         </nav>
@@ -90,7 +90,7 @@
 
 
 
-    <form name='form' id='' action='dbpatientreg.php' method='post' enctype="multipart/form-data">
+    <form name='form' action='dbpatientreg.php' method='post' enctype="multipart/form-data">
 
 
 
