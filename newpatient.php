@@ -90,7 +90,7 @@
 
 
 
-    <form name='form' id='' action='' method='post'>
+    <form name='form' id='' action='' method='post' enctype="multipart/form-data">
 
 
 
