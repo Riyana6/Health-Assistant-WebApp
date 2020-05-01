@@ -33,14 +33,6 @@
         text-align: center;
 
     }
-
-    body {
-        text-align: center;
-    }
-
-    form {
-        display: inline-block;
-    }
     </style>
 
 </head>
@@ -61,8 +53,7 @@
 
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img src="hospital-medicine-icon-png-favpng-r1z9JHyesUSmRqNn7WL3xkb7Q.png" width="30" height="30"
-                    class="d-inline-block align-top" alt="">
+                <img src="hospital-medicine-icon-png-favpng-r1z9JHyesUSmRqNn7WL3xkb7Q.png" class="d-inline-block align-top" alt="" style="width:75px;height:90px;">>
                 Patient profile
             </a>
 
@@ -70,12 +61,14 @@
 
                 <img src="doctor-icon-medical-icon-people-icon-black-symbol-cross-logo-circle-png-clip-art.png"
                     width="30" height="30" class="d-inline-block align-top" alt="">
-                <form action="dbdsearch.php" method="POST">
-                    <input class="center-block" type="text" name="nic" placeholder="Enter patient NIC number."
-                        style="height:50px; width:300px;opacity:0.5;"><br>
-                    <input class="center-block" type="submit" name="submit" value="Search"
-                        style="height:25px; width:70px;">
-                </form>
+                <table align="center" style="margin: 0px auto;">
+                    <tr>
+                        <td><input class="center-block" type="text" name="nic" placeholder="Enter patient NIC number."
+                                style="height:50px; width:300px;opacity:0.5;"></td>
+                        <td><input class="center-block" type="submit" name="submit" value="Search"
+                                style="height:25px; width:70px;"></td>
+                    </tr>
+                </table>
             </a>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
