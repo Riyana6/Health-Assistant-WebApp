@@ -11,11 +11,10 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
 	}
 	else{
 		echo "connection successful";
-	}
+    }
+    
 
-if(isset($_POST['submit']))
-{
-	$fname =$_POST['fullname'];
+    $fullname =$_POST['fullname'];
 	$bloodgroup =$_POST['bloodgroup'];
     $address	=$_POST['address'];
     $dob =$_POST['dob'];
@@ -25,6 +24,16 @@ if(isset($_POST['submit']))
 	$weight =$_POST['weight'];
     $image = $_FILES['image']['name'];
     $date = $_POST['date'];
+    $symptomes = $_POST['symptomes'];
+    $cause_of_the_disease =$_POST['cause_of_the_disease'];
+    $solution = $_POST['solution'];
+    $approved_medication = $_POST['approved_medication'];
+    $attachments = $_FILES['attachments'];
+
+
+if(isset($_POST['submit']))
+{
+	
   	// Get text
   	
 
