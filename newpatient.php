@@ -121,6 +121,10 @@
                     <td><label>DOB: </label></td>
                     <td><input type="text" class="form-control"></td>
                 </tr>
+                <tr>
+                    <td><label>Image: </label></td>
+                    <td><input type="file" class="form-control"></td>
+                </tr>
             </table>
 
             <br>
