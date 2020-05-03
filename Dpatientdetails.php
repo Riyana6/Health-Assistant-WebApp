@@ -54,11 +54,49 @@
 
     <frameset rows="*,*">
         <frame src="frame_1.html">
+            <form action="">
+
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="hospital-medicine-icon-png-favpng-r1z9JHyesUSmRqNn7WL3xkb7Q.png"
+                            class="d-inline-block align-top" alt="" style="width:75px;height:90px;">
+                        Patient profile
+                    </a>
+                    <table class="centerTable">
+                        <tr>
+                            <td><input class="center-block" type="text" name="nic"
+                                    placeholder="Enter patient NIC number."
+                                    style="height:50px; width:300px;opacity:0.5;"></td>
+                            <td><input class="center-block" type="submit" name="submit" value="Search"
+                                    style="height:25px; width:70px;"></td>
+                        </tr>
+                    </table>
+
+
+
+                    <img src="doctor-icon-medical-icon-people-icon-black-symbol-cross-logo-circle-png-clip-art.png"
+                        class="d-inline-block align-top" alt="" style="width:75px;height:90px;">
+
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            User_name
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="newpatient.php">New Patient</a>
+                            <a class="dropdown-item" href="#">Help&Contact</a>
+                            <a class="dropdown-item" href="login.php">LogOut</a>
+                        </div>
+                    </div>
+                </nav>
+            </form>
+
             <frame src="frame_2.html">
-                <
+
     </frameset>
 
-   
+
 </body>
 
 </html>
