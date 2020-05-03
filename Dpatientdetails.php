@@ -92,7 +92,25 @@
                 </nav>
             </form>
 
-            <frame src="frame_2.php">
+            <frame src="index.php?action_type=top" name="topframe" scrolling="no" noresize="noresize" id="topframe"
+                title="" />
+            <!--<fram src ="index.php?action_type=content" name="maiframe" scrolling="no" noresize="noresize" id="mainframe" />-->
+
+            <frameset cols="225,*" frameborder="no" border="0" framespacing="0">
+
+                <frame src="index.php?action_type=menu" name="menuframe" scrolling="no" noresize="noresize"
+                    id="menuframe" title="" />
+
+                <frame class="framebordertop" src="index.php?action_type=login-info" name="mainframe" scrolling="auto"
+                    noresize="noresize" id="mainframe" title="" />
+
+            </frameset>
+
+    </frameset>
+
+    <noframes>
+
+    </noframes>
 
     </frameset>
 
