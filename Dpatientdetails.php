@@ -54,7 +54,7 @@
 
     <frameset rows="*,*">
         <frame src="frame_1.php">
-            <form action="">
+            <form action="dbdsearch.php" method="POST">
 
                 <nav class="navbar navbar-light bg-light">
                     <a class="navbar-brand" href="#">
