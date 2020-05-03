@@ -156,6 +156,11 @@
 
             <input type='file' name='file' id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
+            <div class="buttn">
+                <input class="btn btn-primary btn-lg" type="submit" value="Register" name="submit">
+                <a href="register.php"><input class="btn btn-danger btn-lg" type="reset" value="Cancel"></a>
+
+            </div>
         </div>
     </form>
 
