@@ -53,7 +53,7 @@
     </script>
 
     <frameset rows="*,*">
-        <frame src="frame_1.html">
+        <frame src="frame_1.php">
             <form action="">
 
                 <nav class="navbar navbar-light bg-light">
@@ -92,7 +92,7 @@
                 </nav>
             </form>
 
-            <frame src="frame_2.html">
+            <frame src="frame_2.php">
 
     </frameset>
 
