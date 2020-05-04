@@ -56,7 +56,10 @@ if(isset($_POST['submit']))
                 }else{
                     $msg = "Failed to query";
                 }
+            }
 
+            function two(){
+                
                 $msg1 = "";
                 
                 $sql = "CREATE TABLE '{$nic}'(
@@ -75,7 +78,10 @@ if(isset($_POST['submit']))
                 } else{
                     echo "ERROR: Could not able to execute $sql. " . mysqli_error($connection);
                 }
+            }
 
+            function three(){
+                
                 $query2 = "INSERT INTO '{$nic}' (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
                             VALUES ('{$nic}','{$date}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
                             
@@ -87,7 +93,7 @@ if(isset($_POST['submit']))
                             }else{
                                 $msg1 = "Failed to query";
                             }
-                
+                        }
     }
 
 
