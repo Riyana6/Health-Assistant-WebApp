@@ -72,7 +72,7 @@ if(isset($_POST['submit']))
                 if(mysqli_query($connection, $sql)){
                     echo "Table created successfully.";
                 } else{
-                    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                    echo "ERROR: Could not able to execute $sql. " . mysqli_error($connection);
                 }
 
                 $query2 = "INSERT INTO '{$nic}' (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
