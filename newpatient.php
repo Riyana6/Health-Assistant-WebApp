@@ -99,31 +99,31 @@
 
                 <tr>
                     <td><label>Full Name: </label></td>
-                    <td><input type="text" class="form-control"> </td>
+                    <td><input type="text" class="form-control" name="fullname"> </td>
                 </tr>
                 <tr>
                     <td><label>Age: </label></td>
-                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" name="age"></td>
                 </tr>
                 <tr>
                     <td><label>Blood Group: </label></td>
-                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" name="bloodgroup"></td>
                 </tr>
                 <tr>
                     <td><label>Address: </label></td>
-                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" name="address"></td>
                 </tr>
                 <tr>
                     <td><label>NIC: </label></td>
-                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" name="nic"></td>
                 </tr>
                 <tr>
                     <td><label>DOB: </label></td>
-                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"name="dob"></td>
                 </tr>
                 <tr>
                     <td><label>Image: </label></td>
-                    <td><input type="file" class="form-control"></td>
+                    <td><input type="file" class="form-control" name="image"></td>
                 </tr>
             </table>
 
@@ -131,34 +131,34 @@
             Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
             <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                style="height:40px; width:200px;"><br>
+                style="height:40px; width:200px;" name="date"><br>
 
             Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
+            <input type='text' name="symptomes" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
             Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
                 data-placement="right">
 
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
+            <input type='text' name="cause_of_the_disease" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
 
             Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
+            <input type='text' name="solution" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
             Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
+            <input type='text' name="approved_medication" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
 
             Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
+            <input type='text' name="advice" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
             Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='file' name='file' id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
+            <input type='file' name="attachments" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
             <div class="buttn">
                 <input class="btn btn-primary btn-lg" type="submit" value="Register" name="submit">
