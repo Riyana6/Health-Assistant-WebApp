@@ -51,7 +51,7 @@ if(isset($_POST['submit']))
                 mysqli_query($connection, $query1);
 
                 if (move_uploaded_file($_FILES['image']['tmp_name'], $target1)) {
-                    header ('location:Dpatientdetails.php');
+                    $msg = "query successfull";
                 }else{
                     $msg = "Failed to query";
                 }
