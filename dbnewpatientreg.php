@@ -41,7 +41,8 @@ if(isset($_POST['submit']))
       $target1 = "images/".basename($image);
       $target2 = "attachments/".basename($attachments);
     
-   
+    function one()
+    { 
    
     $msg = "";
 	$query1 = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
