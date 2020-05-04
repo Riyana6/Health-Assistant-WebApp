@@ -38,22 +38,40 @@ if(isset($_POST['submit']))
   	
 
   	// image file directory
-  	$target = "images/".basename($image);
+      $target1 = "images/".basename($image);
+      $target2 = "attachments/".basename($attachments);
     
    
    
     $msg = "";
-	$query = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
+	$query1 = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
 				VALUES ('{$fullname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$image}','{$date}')";
 				
 	
-                mysqli_query($connection, $query);
+                mysqli_query($connection, $query1);
 
-                if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+                if (move_uploaded_file($_FILES['image']['tmp_name'], $target1)) {
                     header ('location:Dpatientdetails.php');
                 }else{
                     $msg = "Failed to query";
                 }
+
+                $msg1 = "";
+                
+                $query2
+
+                $query2 = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
+                            VALUES ('{$fullname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$image}','{$date}')";
+                            
+                
+                            mysqli_query($connection, $query1);
+            
+                            if (move_uploaded_file($_FILES['image']['tmp_name'], $target1)) {
+                                header ('location:Dpatientdetails.php');
+                            }else{
+                                $msg = "Failed to query";
+                            }
+                
     }
 
 
