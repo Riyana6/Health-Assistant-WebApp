@@ -58,9 +58,24 @@ if(isset($_POST['submit']))
 
                 $msg1 = "";
                 
-                $query2
+                $sql = "CREATE TABLE '{$nic}'(
+                    nic varchar(12) NOT NULL PRIMARY KEY ,
+                    date VARCHAR(12) ,
+                    symptomes VARCHAR(1000) ,
+                    cause_of_the_disease VARCHAR(1000) ,
+                    solution VARCHAR(1000) ,
+                    approved_medication VARCHAR(1000) ,
+                    attachments VARCHAR(1000) ,
 
-                $query2 = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
+                )";
+
+                if(mysqli_query($connection, $sql)){
+                    echo "Table created successfully.";
+                } else{
+                    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                }
+
+                $query2 = "INSERT INTO '{$nic}' (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
                             VALUES ('{$fullname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$image}','{$date}')";
                             
                 
