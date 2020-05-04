@@ -75,8 +75,8 @@ if(isset($_POST['submit']))
                     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
                 }
 
-                $query2 = "INSERT INTO '{$nic}' (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
-                            VALUES ('{$fullname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$image}','{$date}')";
+                $query2 = "INSERT INTO '{$nic}' (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
+                            VALUES ('{$nic}','{$date}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
                             
                 
                             mysqli_query($connection, $query1);
