@@ -94,6 +94,12 @@ if(isset($_POST['submit']))
                                 $msg1 = "Failed to query";
                             }
                         }
+
+
+
+                         one();
+                         two();
+                         three();
     }
 
 
