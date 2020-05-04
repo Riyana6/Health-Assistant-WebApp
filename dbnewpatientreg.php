@@ -84,7 +84,7 @@ if(isset($_POST['submit']))
                             if (move_uploaded_file($_FILES['image']['tmp_name'], $target2)) {
                                 header ('location:Dpatientdetails.php');
                             }else{
-                                $msg = "Failed to query";
+                                $msg1 = "Failed to query";
                             }
                 
     }
