@@ -44,7 +44,7 @@ if(isset($_POST['submit']))
    
     $msg = "";
 	$query = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
-				VALUES ('{$fname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$image}','{$date}')";
+				VALUES ('{$fullname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$image}','{$date}')";
 				
 	
                 mysqli_query($connection, $query);
@@ -54,15 +54,7 @@ if(isset($_POST['submit']))
                 }else{
                     $msg = "Failed to query";
                 }
-
-	
-        
-
-        
-
-
-
-}
+    }
 
 
 
