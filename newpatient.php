@@ -79,7 +79,7 @@
                     User_name
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-
+                    <a class="dropdown-item" href="Dpatientdetails.php">Backt</a>
                     <a class="dropdown-item" href="#">Help&Contact</a>
                     <a class="dropdown-item" href="login.php">LogOut</a>
                 </div>
