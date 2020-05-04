@@ -79,7 +79,7 @@ if(isset($_POST['submit']))
                             VALUES ('{$nic}','{$date}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
                             
                 
-                            mysqli_query($connection, $query1);
+                            mysqli_query($connection, $query2);
             
                             if (move_uploaded_file($_FILES['image']['tmp_name'], $target1)) {
                                 header ('location:Dpatientdetails.php');
