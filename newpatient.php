@@ -114,24 +114,36 @@
                     <td><input type="text" class="form-control" name="address"></td>
                 </tr>
                 <tr>
+                    <td>Telephone</td>
+                    <td><input type="text" class="form-control " name="telephone"></td>
+                </tr>
+                <tr>
                     <td><label>NIC: </label></td>
                     <td><input type="text" class="form-control" name="nic"></td>
                 </tr>
                 <tr>
                     <td><label>DOB: </label></td>
-                    <td><input type="text" class="form-control"name="dob"></td>
+                    <td><input type="text" class="form-control" name="dob"></td>
                 </tr>
                 <tr>
                     <td><label>Image: </label></td>
                     <td><input type="file" class="form-control" name="image"></td>
+                </tr>
+                <tr>
+                    <td>Height(cm)</td>
+                    <td><input type="text" class="form-control " name="height"></td>
+                </tr>
+                <tr>
+                    <td>Weight(kg)</td>
+                    <td><input type='text' class="form-control" name="weight"></td>
                 </tr>
             </table>
 
             <br>
             Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                style="height:40px; width:200px;" name="date"><br>
+            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;"
+                name="date"><br>
 
             Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
