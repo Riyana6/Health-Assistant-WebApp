@@ -90,7 +90,7 @@
 
 
 
-    <form name='form' action='dbnewpatientreg.php' method='post' enctype="multipart/form-data">
+    <form name='form' action='dbnewpatientreg.php' method='POST' enctype="multipart/form-data">
 
 
 
