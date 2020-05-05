@@ -28,7 +28,7 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
     $cause_of_the_disease =$_POST['cause_of_the_disease'];
     $solution = $_POST['solution'];
     $approved_medication = $_POST['approved_medication'];
-    $attachments = $_FILES['attachments'];
+    $attachments = $_FILES['attachments']['name'];
 
 
 if(isset($_POST['submit']))
