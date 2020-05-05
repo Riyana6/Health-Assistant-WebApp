@@ -41,9 +41,6 @@ if(isset($_POST['submit']))
       $target1 = "images/".basename($image);
       $target2 = "attachments/".basename($attachments);
     
-    function one()
-    { 
-   
     $msg = "";
 	$query1 = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
 				VALUES ('{$fullname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$image}','{$date}')";
@@ -56,13 +53,12 @@ if(isset($_POST['submit']))
                 }else{
                     $msg = "Failed to query";
                 }
-            }
-
-            function two(){
+           
                 
                 $msg1 = "";
                 
-                $sql = "CREATE TABLE $nic (
+                $sql = "CREATE TABLE nic as SELECT nic
+                FROM patientreg WHERE $nic=nic; (
                     nic varchar(12) NOT NULL PRIMARY KEY ,
                     date VARCHAR(12) ,
                     symptomes VARCHAR(1000) ,
@@ -74,15 +70,7 @@ if(isset($_POST['submit']))
                 )";
 
                 if(mysqli_query($connection, $sql)){
-                    echo "Table created successfully.";
-                } else{
-                    echo "ERROR: Could not able to execute $sql. " . mysqli_error($connection);
-                }
-            }
-
-            function three(){
-                
-                $query2 = "INSERT INTO $nic (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
+                    $query2 = "INSERT INTO nic (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
                             VALUES ('{$nic}','{$date}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
                             
                 
@@ -93,14 +81,15 @@ if(isset($_POST['submit']))
                             }else{
                                 $msg1 = "Failed to query";
                             }
+                } else{
+                    echo "ERROR: Could not able to execute $sql. " . mysqli_error($connection);
+                }
+            
+                
+                
                         }
 
 
-
-                         one();
-                         two();
-                         three();
-    }
 
 
 
