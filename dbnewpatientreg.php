@@ -58,16 +58,7 @@ if(isset($_POST['submit']))
                 $msg1 = "";
                 
                 $sql = "CREATE TABLE nicno as SELECT nic
-                FROM patientreg WHERE $nic=nic; (
-                    nic varchar(12) NOT NULL PRIMARY KEY ,
-                    date VARCHAR(12) ,
-                    symptomes VARCHAR(1000) ,
-                    cause_of_the_disease VARCHAR(1000) ,
-                    solution VARCHAR(1000) ,
-                    approved_medication VARCHAR(1000) ,
-                    attachments VARCHAR(1000) ,
-
-                )";
+                FROM patientreg WHERE $nic=nic;"
 
                 if(mysqli_query($connection, $sql)){
                     $query2 = "INSERT INTO nic (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
