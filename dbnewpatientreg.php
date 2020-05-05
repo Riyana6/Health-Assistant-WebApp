@@ -57,11 +57,11 @@ if(isset($_POST['submit']))
                 
                 $msg1 = "";
                 $target2 = "files/".basename($attachments);
-                $sql = "CREATE TABLE nicno as SELECT *
-                FROM patientreg WHERE nic='$nic'";
+                $sql = "CREATE TABLE patient as SELECT *
+                FROM nicno WHERE nic='$nic'";
 
                 if(mysqli_query($connection, $sql)){
-                    $query2 = "INSERT INTO nicno (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
+                    $query2 = "INSERT INTO patient (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
                             VALUES ('{$nic}','{$date}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
                             
                 
