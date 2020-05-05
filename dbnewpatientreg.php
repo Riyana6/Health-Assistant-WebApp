@@ -57,7 +57,7 @@ if(isset($_POST['submit']))
                 
                 $msg1 = "";
                 $target2 = "files/".basename($attachments);
-                $sql = "CREATE TABLE nicno as SELECT nic
+                $sql = "CREATE TABLE nicno as SELECT *
                 FROM patientreg WHERE nic='$nic'";
 
                 if(mysqli_query($connection, $sql)){
