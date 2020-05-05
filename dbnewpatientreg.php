@@ -58,7 +58,7 @@ if(isset($_POST['submit']))
                 $msg1 = "";
                 $target2 = "images/".basename($attachments);
                 $sql = "SELECT TABLE nicno as SELECT nic
-                FROM patientreg WHERE $nic=nic";
+                FROM patientreg WHERE nic='$nic'";
 
                 if(mysqli_query($connection, $sql)){
                     $query2 = "INSERT INTO nicno (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
