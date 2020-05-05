@@ -39,7 +39,7 @@ if(isset($_POST['submit']))
 
   	// image file directory
       $target1 = "images/".basename($image);
-      $target2 = "attachments/".basename($attachments);
+      
     
     $msg = "";
 	$query1 = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
@@ -56,7 +56,7 @@ if(isset($_POST['submit']))
            
                 
                 $msg1 = "";
-                
+                $target2 = "attachments/".basename($attachments);
                 $sql = "SELECT TABLE nicno as SELECT nic
                 FROM patientreg WHERE $nic=nic";
 
