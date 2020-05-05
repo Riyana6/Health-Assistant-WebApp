@@ -6,10 +6,12 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
 	//mysqli_connect_error(); mysqli_connect_error();
 	
 	//Checking the connection
-	if(mysqli_connect_error()){
+    if(mysqli_connect_error())
+    {
 		die('Database connection failed ' . mysqli_connect_error());
 	}
-	else{
+    else
+    {
 		echo "connection successful";
     }
     
@@ -31,61 +33,55 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
     $attachments = $_FILES['attachments']['name'];
 
 
-if(isset($_POST['submit']))
-{
+    if(isset($_POST['submit']))
+    {
 	
-  	// Get text
   	
-
-  	// image file directory
-      $target1 = "images/".basename($image);
+        $target1 = "images/".basename($image);
       
     
-    $msg = "";
-	$query1 = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
+        $msg = "";
+	    $query1 = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
 				VALUES ('{$fullname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$image}','{$date}')";
 				
 	
-                mysqli_query($connection, $query1);
+        mysqli_query($connection, $query1);
 
-                if (move_uploaded_file($_FILES['image']['tmp_name'], $target1)) {
-                    $msg = "query successfull";
-                }else{
-                    $msg = "Failed to query";
-                }
+        if (move_uploaded_file($_FILES['image']['tmp_name'], $target1)) 
+        {
+            $msg = "query successfull";
+        }
+        else
+        {
+            $msg = "Failed to query";
+        }
            
                 
-                $msg1 = "";
-                $target2 = "files/".basename($attachments);
-                $sql = "CREATE TABLE patient as SELECT *
+        $msg1 = "";
+        $target2 = "files/".basename($attachments);
+        $sql = "CREATE TABLE patient as SELECT *
                 FROM nicno WHERE nic='$nic'";
 
-                if(mysqli_query($connection, $sql)){
-                    $query2 = "INSERT INTO patient (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
+        if(mysqli_query($connection, $sql))
+            {
+                $query2 = "INSERT INTO patient (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
                             VALUES ('{$nic}','{$date}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
                             
                 
-                            mysqli_query($connection, $query2);
+                mysqli_query($connection, $query2);
             
-                            if (move_uploaded_file($_FILES['attachments']['tmp_name'], $target2)) {
-                                header ('location:Dpatientdetails.php');
-                            }else{
-                                $msg1 = "Failed to query";
-                            }
-                } else{
+                if (move_uploaded_file($_FILES['attachments']['tmp_name'], $target2)) 
+                    {
+                        header ('location:Dpatientdetails.php');
+                    }
+                    else
+                    {
+                        $msg1 = "Failed to query";
+                    }
+                } 
+                else
+                {
                     echo "ERROR: Could not able to execute $sql. " . mysqli_error($connection);
                 }
-            
-                
-                
-                        }
-
-
-
-
-
-
-
- 
-
-?>
+            }
+    ?>
