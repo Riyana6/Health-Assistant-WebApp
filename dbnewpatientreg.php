@@ -57,7 +57,7 @@ if(isset($_POST['submit']))
                 
                 $msg1 = "";
                 
-                $sql = "CREATE TABLE nic as SELECT nic
+                $sql = "CREATE TABLE nicno as SELECT nic
                 FROM patientreg WHERE $nic=nic; (
                     nic varchar(12) NOT NULL PRIMARY KEY ,
                     date VARCHAR(12) ,
