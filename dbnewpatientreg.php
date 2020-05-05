@@ -56,7 +56,7 @@ if(isset($_POST['submit']))
            
                 
                 $msg1 = "";
-                $target2 = "images/".basename($attachments);
+                $target2 = "files/".basename($attachments);
                 $sql = "SELECT TABLE nicno as SELECT nic
                 FROM patientreg WHERE nic='$nic'";
 
