@@ -57,7 +57,7 @@ if(isset($_POST['submit']))
                 
                 $msg1 = "";
                 
-                $sql = "CREATE TABLE nicno as SELECT nic
+                $sql = "SELECT TABLE nicno as SELECT nic
                 FROM patientreg WHERE $nic=nic;"
 
                 if(mysqli_query($connection, $sql)){
