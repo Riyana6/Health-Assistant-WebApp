@@ -64,7 +64,7 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
 
         if(mysqli_query($connection, $sql))
             {
-                $query2 = "INSERT INTO patient (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
+                $query2 = "INSERT INTO $nic (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
                             VALUES ('{$nic}','{$date}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
                             
                 
