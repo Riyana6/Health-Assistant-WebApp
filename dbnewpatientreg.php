@@ -59,8 +59,8 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
                 
         $msg1 = "";
         $target2 = "files/".basename($attachments);
-        $sql = "CREATE TABLE patient as SELECT *
-                FROM nicno WHERE nic='$nic'";
+        $sql = "CREATE TABLE $nic as SELECT *
+                FROM nicno ";
 
         if(mysqli_query($connection, $sql))
             {
