@@ -80,7 +80,7 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
                     }
                 } 
                 else
-                {
+                { 
                     echo "ERROR: Could not able to execute $sql. " . mysqli_error($connection);
                 }
             }
