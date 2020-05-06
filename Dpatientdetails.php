@@ -67,7 +67,7 @@
                             <td><input class="center-block" type="text" name="nic"
                                     placeholder="Enter patient NIC number."
                                     style="height:50px; width:300px;opacity:0.5;"></td>
-                            <td><input class="center-block" type="submit" name="submit" value="Search"
+                            <td><input class="center-block" type="submit" name="submitsearch" value="Search"
                                     style="height:25px; width:70px;"></td>
                         </tr>
                     </table>
