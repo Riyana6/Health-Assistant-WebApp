@@ -70,7 +70,7 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
                 
                 mysqli_query($connection, $query2);
             
-                if (move_uploaded_file($_FILES['attachments']['tmp_name'], $target2)) 
+                if (move_uploaded_file($_FILES['attachments']['tmp_name'], $target2.$attachments)) 
                     {
                         header ('location:Dpatientdetails.php');
                     }
