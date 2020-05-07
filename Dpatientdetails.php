@@ -19,9 +19,9 @@ if(isset($_POST['submitsearch']))
     
     // if id exist 
     // show data in inputs
-    if((mysqli_num_rows($result) > 0)&&(mysqli_num_rows($result) > 0))
+    if((mysqli_num_rows($result) == 1)&&(mysqli_num_rows($result1) == 1))
     {
-      while (($row = mysqli_fetch_array($result))&&($row = mysqli_fetch_array($result)))
+      while (($row = mysqli_fetch_array($result))&&($row = mysqli_fetch_array($result1)))
       {
         $fullname =$row['fullname'];
         $bloodgroup =$row['bloodgroup'];
