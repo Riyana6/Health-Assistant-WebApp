@@ -34,10 +34,10 @@ if(isset($_POST['submitsearch']))
         $image = $row['image']['name'];
         $date = $row['date'];
         $symptomes = $row['symptomes'];
-        $cause_of_the_disease =$_POST['cause_of_the_disease'];
-        $solution = $_POST['solution'];
-        $approved_medication = $_POST['approved_medication'];
-        $attachments = $_FILES['attachments']['name'];
+        $cause_of_the_disease =$row['cause_of_the_disease'];
+        $solution = $row['solution'];
+        $approved_medication = $row['approved_medication'];
+        $attachments = $row['attachments']['name'];
       }  
     }
     
