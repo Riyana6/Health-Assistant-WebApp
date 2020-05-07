@@ -326,7 +326,7 @@ else{
                         Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
                             data-placement="right">
 
-                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
+                        <input type='file' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
                             name="attachments" value="<?php echo $attachments;?>"><br>
 
                     </div>
