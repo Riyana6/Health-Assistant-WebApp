@@ -52,6 +52,7 @@ if(isset($_POST['submitsearch']))
         $weight ="";
         $image = "";
         $date = "";
+        $doctor = "";
         $symptomes = "";
         $cause_of_the_disease ="";
         $solution = "";
@@ -68,6 +69,7 @@ if(isset($_POST['submitsearch']))
       {
       
         $date = $row['date'];
+        $doctor = $row['doctor'];
         $symptomes = $row['symptomes'];
         $cause_of_the_disease =$row['cause_of_the_disease'];
         $solution = $row['solution'];
@@ -90,6 +92,7 @@ if(isset($_POST['submitsearch']))
         $weight ="";
         $image = "";
         $date = "";
+        $doctor = "";
         $symptomes = "";
         $cause_of_the_disease ="";
         $solution = "";
@@ -113,6 +116,7 @@ else{
         $weight ="";
         $image = "";
         $date = "";
+        $doctor = "";
         $symptomes = "";
         $cause_of_the_disease ="";
         $solution = "";
@@ -289,6 +293,10 @@ else{
 
                         <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
                             style="height:40px; width:200px;" disabled name="date" value="<?php echo $date;?>"><br>
+                        Doctor <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                            style="height:40px; width:200px;" disabled name="doctor" value="<?php echo $doctor;?>"><br>
 
                         Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
                             data-placement="right">

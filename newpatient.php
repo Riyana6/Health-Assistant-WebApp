@@ -145,6 +145,11 @@
             <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;"
                 name="date"><br>
 
+            Doctor nic <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;"
+                name="doctor"><br>
+
             Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
             <input type='text' name="symptomes" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
@@ -164,9 +169,7 @@
             <input type='text' name="approved_medication" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
 
-            Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' name="advice" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
             Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 

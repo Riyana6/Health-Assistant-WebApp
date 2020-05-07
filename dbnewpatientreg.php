@@ -26,6 +26,7 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
 	$weight =$_POST['weight'];
     $image = $_FILES['image']['name'];
     $date = $_POST['date'];
+    $doctor = $_POST['doctor'];
     $symptomes = $_POST['symptomes'];
     $cause_of_the_disease =$_POST['cause_of_the_disease'];
     $solution = $_POST['solution'];
@@ -64,8 +65,8 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
 
         if(mysqli_query($connection, $sql))
             {
-                $query2 = "insert into $nic (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
-                            values ('{$nic}','{$date}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
+                $query2 = "insert into $nic (nic , date ,doctor, symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
+                            values ('{$nic}','{$date}','{$doctor}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
                             
                 
                 mysqli_query($connection, $query2);
