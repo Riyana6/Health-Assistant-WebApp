@@ -30,10 +30,10 @@ if(isset($_POST['submitsearch']))
         $telephone	=$row['telephone'];
         $nic =$row['nic'];
         $height =$row['height'];
-        $weight =$_POST['weight'];
-        $image = $_FILES['image']['name'];
-        $date = $_POST['date'];
-        $symptomes = $_POST['symptomes'];
+        $weight =$row['weight'];
+        $image = $row['image']['name'];
+        $date = $row['date'];
+        $symptomes = $row['symptomes'];
         $cause_of_the_disease =$_POST['cause_of_the_disease'];
         $solution = $_POST['solution'];
         $approved_medication = $_POST['approved_medication'];
