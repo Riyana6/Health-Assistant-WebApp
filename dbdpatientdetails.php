@@ -26,10 +26,10 @@ if(isset($_POST['submitsearch']))
         $fullname =$row['fullname'];
         $bloodgroup =$row['bloodgroup'];
         $address	=$row['address'];
-        $dob =$_POST['dob'];
-        $telephone	=$_POST['telephone'];
-        $nic =$_POST['nic'];
-        $height =$_POST['height'];
+        $dob =$row['dob'];
+        $telephone	=$row['telephone'];
+        $nic =$row['nic'];
+        $height =$row['height'];
         $weight =$_POST['weight'];
         $image = $_FILES['image']['name'];
         $date = $_POST['date'];
