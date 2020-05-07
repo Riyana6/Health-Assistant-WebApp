@@ -11,7 +11,7 @@ if(isset($_POST['submitsearch']))
     $connection = mysqli_connect('localhost','root','','healthassistant');
     
     // mysql search query
-    $query = "SELECT * FROM `patientreg` WHERE nic = '$nic' union SELECT * FROM '$nic' WHERE date=(SELECT max(date) FROM '$nic')";
+    $query = "SELECT * FROM `patientreg` WHERE nic = '$nic' UNION ALL SELECT * FROM '$nic' WHERE date=(SELECT max(date) FROM '$nic')";
    
     
     $result = mysqli_query($connection, $query);
@@ -19,9 +19,9 @@ if(isset($_POST['submitsearch']))
     
     // if id exist 
     // show data in inputs
-    if((mysqli_num_rows($result) >= 0))
+    if(mysqli_num_rows($result) > 0)
     {
-      while (($row = mysqli_fetch_array($result)))
+      while ($row = mysqli_fetch_array($result))
       {
         $fullname =$row['fullname'];
         $bloodgroup =$row['bloodgroup'];
@@ -156,7 +156,7 @@ else{
 
     <frameset rows="*,*">
         <frame src="frame_1.php">
-            <form action="Dpatientdetails.php" method="POST">
+            <form action="Dpatientdetails.php" method="POST" enctype="multipart/form-data">
 
                 <nav class="navbar navbar-light bg-light">
                     <a class="navbar-brand" href="#">
@@ -202,7 +202,7 @@ else{
 
                 <frame src="index.php?action_type=menu" name="menuframe" scrolling="no" noresize="noresize"
                     id="menuframe" title="" />
-                <form name='form' id='' action='Dpatientdetails.php' method='POST'>
+                <form name='form' id='' action='Dpatientdetails.php' method='POST' enctype="multipart/form-data">
 
 
 
