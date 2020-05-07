@@ -54,7 +54,7 @@
 
     <frameset rows="*,*">
         <frame src="frame_1.php">
-            <form action="dbdsearch.php" method="POST">
+            <form action="dbdpatientdetails.php" method="POST">
 
                 <nav class="navbar navbar-light bg-light">
                     <a class="navbar-brand" href="#">
@@ -100,7 +100,7 @@
 
                 <frame src="index.php?action_type=menu" name="menuframe" scrolling="no" noresize="noresize"
                     id="menuframe" title="" />
-                <form name='form' id='' action='' method='post'>
+                <form name='form' id='' action='dbdpatientdetails.php' method='post'>
 
 
 
