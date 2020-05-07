@@ -53,15 +53,9 @@
 
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img src="hospital-medicine-icon-png-favpng-r1z9JHyesUSmRqNn7WL3xkb7Q.png" width="50" height="50"
+                <img src="hospital-medicine-icon-png-favpng-r1z9JHyesUSmRqNn7WL3xkb7Q.png" width="30" height="30"
                     class="d-inline-block align-top" alt="">
                 Patient profile
-            </a>
-
-            <a href="" style="margin-left: 55%;">
-
-                <img src="doctor-icon-medical-icon-people-icon-black-symbol-cross-logo-circle-png-clip-art.png"
-                    width="100" height="100" class="d-inline-block align-top" alt="">
             </a>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -76,6 +70,93 @@
             </div>
         </nav>
     </form>
+
+
+    <form name='form' id='' action='' method='post'>
+
+
+
+        <div class="col">
+            <table cellpadding="5">
+
+                <tr>
+                    <td><label>Full Name: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>Telephone: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>Address: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>NIC: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>DOB: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>Blood Group: </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>Height(m): </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+                <tr>
+                    <td><label>Weight(kg): </label></td>
+                    <td><input type="text" class="form-control" disabled></td>
+                </tr>
+            </table>
+
+            <br>
+            <h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+                <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    style="height:40px; width:200px;" disabled><br>
+
+                Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    disabled><br>
+
+                Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                    data-placement="right">
+
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    disabled><br>
+
+
+                Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    disabled><br>
+
+                Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                    data-placement="right">
+
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    disabled><br>
+
+
+                Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    disabled><br>
+
+                Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                    disabled><br>
+
+        </div>
+    </form>
+
+
 </body>
 
 </html>
