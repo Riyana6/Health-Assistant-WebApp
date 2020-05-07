@@ -159,39 +159,39 @@
                         Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
                             data-placement="right">
 
-                        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                            disabled name="fullname" value="<?php echo $fullname;?>"><br>
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
+                            name="fullname" value="<?php echo $fullname;?>"><br>
 
                         Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
                             data-placement="right">
 
-                        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                            disabled name="fullname" value="<?php echo $fullname;?>"><br>
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
+                            name="fullname" value="<?php echo $fullname;?>"><br>
 
 
                         Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
                             data-placement="right">
 
-                        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                            disabled name="fullname" value="<?php echo $fullname;?>"><br>
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
+                            name="fullname" value="<?php echo $fullname;?>"><br>
 
                         Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
                             data-placement="right">
 
-                        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                            disabled name="fullname" value="<?php echo $fullname;?>"><br>
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
+                            name="fullname" value="<?php echo $fullname;?>"><br>
 
 
                         Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-                        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                            disabled name="fullname" value="<?php echo $fullname;?>"><br>
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
+                            name="fullname" value="<?php echo $fullname;?>"><br>
 
                         Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
                             data-placement="right">
 
-                        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                            disabled name="fullname" value="<?php echo $fullname;?>"><br>
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
+                            name="fullname" value="<?php echo $fullname;?>"><br>
 
                     </div>
                 </form>
