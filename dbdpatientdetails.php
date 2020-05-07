@@ -31,13 +31,13 @@ if(isset($_POST['submitsearch']))
         $nic =$row['nic'];
         $height =$row['height'];
         $weight =$row['weight'];
-        $image = $row['image']['name'];
+        $image = $row['image'];
         $date = $row['date'];
         $symptomes = $row['symptomes'];
         $cause_of_the_disease =$row['cause_of_the_disease'];
         $solution = $row['solution'];
         $approved_medication = $row['approved_medication'];
-        $attachments = $row['attachments']['name'];
+        $attachments = $row['attachments'];
       }  
     }
     
