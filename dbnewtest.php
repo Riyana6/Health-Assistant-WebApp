@@ -35,7 +35,7 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
         $target2 = "files/".basename($attachments);
         
         $query2 = "insert into $nic (nic , date ,doctor, symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
-        values ({$nic}','{$date}','{$doctor}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
+        values ('{$nic}','{$date}','{$doctor}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
         
 
 

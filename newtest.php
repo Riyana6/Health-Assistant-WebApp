@@ -82,7 +82,7 @@
     <form name='form' id='' action='dbnewtest.php' method='post' enctype="multipart/form-data">
         <div>
 
-            Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+            Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right" placeholder="20200101">
 
             <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;"
                 name="date" value=""><br>
