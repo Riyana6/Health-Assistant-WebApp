@@ -283,7 +283,7 @@ else{
                                         value="<?php echo $weight;?>"></td>
                             </tr>
                         </table>
-
+                        <a href="newtest.php"><input class="btn btn-danger btn-lg" type="button" value="newtest"></a>
                         <br>
                         Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 

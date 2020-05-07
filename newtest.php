@@ -87,55 +87,53 @@
                     <td><input type="text" class="form-control" disabled></td>
                 </tr>
             </table>
-            <h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+            Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-                <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    style="height:40px; width:200px;">
-                <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                        title="write here syptomes detial.">
-                </h5>
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    placeholder='write here syptomes detial.'><br>
+            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;">
+            Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                title="write here syptomes detial.">
 
-                <h5>Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                        data-placement="right" title="write here Causes of the disease detial.">
-                </h5>
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    placeholder='write here Causes of the disease detial.'><br>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here syptomes detial.'><br>
 
-                <h5>Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                        title="write here Solution detial.">
-                </h5>
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    placeholder='write here Solution detial.'><br>
+            Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                data-placement="right" title="write here Causes of the disease detial.">
 
-                <h5>Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                        data-placement="right" title="write here Approved medication detial.">
-                </h5>
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    placeholder='write here Approved medication detial.'><br>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here Causes of the disease detial.'><br>
 
+            Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                title="write here Solution detial.">
 
-                <h5>Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                        title="write here Advice detial.">
-                </h5>
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    placeholder='write here Advice detial.'><br>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here Solution detial.'><br>
+
+            Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                title="write here Approved medication detial.">
+
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here Approved medication detial.'><br>
 
 
-                <div class="custom-file">
-                    <h5>Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                            data-placement="right">
-                    </h5>
-                    <input type="file" class="custom-file-input" id="inputGroupFile04"
-                        aria-describedby="inputGroupFileAddon04">
-                    <label class="custom-file-label" for="inputGroupFile04">Choose file...(image, x-ray, ECG,
-                        etc...)</label>
-                </div>
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button" id="inputGroupFileAddon04">Upload</button>
+            Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                title="write here Advice detial.">
 
-                </div>
+            <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                placeholder='write here Advice detial.'><br>
+
+
+            <div class="custom-file">
+                Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+                <input type="file" class="custom-file-input" id="inputGroupFile04"
+                    aria-describedby="inputGroupFileAddon04">
+                <label class="custom-file-label" for="inputGroupFile04">Choose file...(image, x-ray, ECG,
+                    etc...)</label>
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="inputGroupFileAddon04">Upload</button>
+
+            </div>
         </div>
 
         <div>
