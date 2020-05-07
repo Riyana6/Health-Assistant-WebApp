@@ -11,17 +11,17 @@ if(isset($_POST['submitsearch']))
     $connection = mysqli_connect('localhost','root','','healthassistant');
     
     // mysql search query
-    $query = "SELECT * FROM `patientreg` WHERE `nic` = $nic LIMIT 1";
-    $query1 = "SELECT * FROM `$nic` WHERE date=(SELECT max(date) FROM `$nic`);";
+    $query = "SELECT * FROM `patientreg` WHERE `nic` = $nic LIMIT 1 union SELECT * FROM `$nic` WHERE date=(SELECT max(date) FROM `$nic`)";
+   
     
     $result = mysqli_query($connection, $query);
-    $result1 = mysqli_query($connection, $query1);
+    
     
     // if id exist 
     // show data in inputs
-    if((mysqli_num_rows($query) >= 0)&&(mysqli_num_rows($query1) >= 0))
+    if((mysqli_num_rows($query) >= 0))
     {
-      while (($row = mysqli_fetch_array($result))&&($row1 = mysqli_fetch_array($result1)))
+      while (($row = mysqli_fetch_array($result)))
       {
         $fullname =$row['fullname'];
         $bloodgroup =$row['bloodgroup'];
