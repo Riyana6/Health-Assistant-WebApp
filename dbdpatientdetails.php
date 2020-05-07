@@ -64,15 +64,28 @@ if(isset($_POST['submitsearch']))
     
     
     mysqli_free_result($result);
-    mysqli_close($connect);
+    mysqli_free_result($result1);
+    mysqli_close($connection);
     
 }
 
 // in the first time inputs are empty
 else{
-    $fname = "";
-    $lname = "";
-    $age = "";
+    $fullname ="";
+        $bloodgroup ="";
+        $address	="";
+        $dob ="";
+        $telephone	="";
+        $nic ="";
+        $height ="";
+        $weight ="";
+        $image = "";
+        $date = "";
+        $symptomes = "";
+        $cause_of_the_disease ="";
+        $solution = "";
+        $approved_medication = "";
+        $attachments = "";
 }
 
 
