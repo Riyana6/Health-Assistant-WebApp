@@ -157,7 +157,7 @@ else{
 
     <frameset rows="*,*">
         <frame src="frame_1.php">
-            <form action="dbdpatientdetails.php" method="POST">
+            <form action="Dpatientdetails.php" method="POST">
 
                 <nav class="navbar navbar-light bg-light">
                     <a class="navbar-brand" href="#">
@@ -203,7 +203,7 @@ else{
 
                 <frame src="index.php?action_type=menu" name="menuframe" scrolling="no" noresize="noresize"
                     id="menuframe" title="" />
-                <form name='form' id='' action='dbdpatientdetails.php' method='POST'>
+                <form name='form' id='' action='Dpatientdetails.php' method='POST'>
 
 
 
