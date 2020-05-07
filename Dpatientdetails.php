@@ -100,7 +100,7 @@
 
                 <frame src="index.php?action_type=menu" name="menuframe" scrolling="no" noresize="noresize"
                     id="menuframe" title="" />
-                <form name='form' id='' action='dbdpatientdetails.php' method='post'>
+                <form name='form' id='' action='dbdpatientdetails.php' method='POST'>
 
 
 
