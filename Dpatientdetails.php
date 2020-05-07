@@ -100,89 +100,101 @@
 
                 <frame src="index.php?action_type=menu" name="menuframe" scrolling="no" noresize="noresize"
                     id="menuframe" title="" />
-                    <form name='form' id='' action='' method='post'>
+                <form name='form' id='' action='' method='post'>
 
 
 
-        <div class="col">
-            <table cellpadding="5">
+                    <div class="col">
+                        <table cellpadding="5">
 
-                <tr>
-                    <td><label>Full Name: </label></td>
-                    <td><input type="text" class="form-control" disabled name="fullname" value="<?php echo $fullname;?>"></td>
-                </tr>
-                <tr>
-                    <td><label>Telephone: </label></td>
-                    <td><input type="text" class="form-control" disabled name="telephone" value="<?php echo $fullname;?>"></td>
-                </tr>
-                <tr>
-                    <td><label>Address: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-                <tr>
-                    <td><label>NIC: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-                <tr>
-                    <td><label>DOB: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-                <tr>
-                    <td><label>Blood Group: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-                <tr>
-                    <td><label>Height(m): </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-                <tr>
-                    <td><label>Weight(kg): </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-            </table>
+                            <tr>
+                                <td><label>Full Name: </label></td>
+                                <td><input type="text" class="form-control" disabled name="fullname"
+                                        value="<?php echo $fullname;?>"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Telephone: </label></td>
+                                <td><input type="text" class="form-control" disabled name="telephone"
+                                        value="<?php echo $fullname;?>"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Address: </label></td>
+                                <td><input type="text" class="form-control" disabled name="fullname"
+                                        value="<?php echo $fullname;?>"></td>
+                            </tr>
+                            <tr>
+                                <td><label>NIC: </label></td>
+                                <td><input type="text" class="form-control" disabled name="fullname"
+                                        value="<?php echo $fullname;?>"></td>
+                            </tr>
+                            <tr>
+                                <td><label>DOB: </label></td>
+                                <td><input type="text" class="form-control" disabled name="fullname"
+                                        value="<?php echo $fullname;?>"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Blood Group: </label></td>
+                                <td><input type="text" class="form-control" disabled name="fullname"
+                                        value="<?php echo $fullname;?>"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Height(m): </label></td>
+                                <td><input type="text" class="form-control" disabled name="fullname"
+                                        value="<?php echo $fullname;?>"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Weight(kg): </label></td>
+                                <td><input type="text" class="form-control" disabled name="fullname"
+                                        value="<?php echo $fullname;?>"></td>
+                            </tr>
+                        </table>
 
-            <br>
-            <h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+                        <br>
+                        Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-                <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    style="height:40px; width:200px;" disabled><br>
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                            style="height:40px; width:200px;" disabled name="fullname"
+                            value="<?php echo $fullname;?>"><br>
 
-                Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+                        Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                            data-placement="right">
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+                        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                            disabled name="fullname" value="<?php echo $fullname;?>"><br>
 
-                Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                    data-placement="right">
+                        Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                            data-placement="right">
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
-
-
-                Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
-
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
-
-                Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                    data-placement="right">
-
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+                        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                            disabled name="fullname" value="<?php echo $fullname;?>"><br>
 
 
-                Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+                        Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                            data-placement="right">
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+                        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                            disabled name="fullname" value="<?php echo $fullname;?>"><br>
 
-                Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+                        Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                            data-placement="right">
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+                        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                            disabled name="fullname" value="<?php echo $fullname;?>"><br>
 
-        </div>
-    </form>
+
+                        Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+                        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                            disabled name="fullname" value="<?php echo $fullname;?>"><br>
+
+                        Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                            data-placement="right">
+
+                        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                            disabled name="fullname" value="<?php echo $fullname;?>"><br>
+
+                    </div>
+                </form>
 
 
 
