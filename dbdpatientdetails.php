@@ -44,10 +44,22 @@ if(isset($_POST['submitsearch']))
     // if the id not exist
     // show a message and clear inputs
     else {
-        echo "Undifined ID";
-            $fname = "";
-            $lname = "";
-            $age = "";
+        echo "Undifined nic";
+        $fullname ="";
+        $bloodgroup ="";
+        $address	="";
+        $dob ="";
+        $telephone	="";
+        $nic ="";
+        $height ="";
+        $weight ="";
+        $image = "";
+        $date = "";
+        $symptomes = "";
+        $cause_of_the_disease ="";
+        $solution = "";
+        $approved_medication = "";
+        $attachments = "";
     }
     
     
