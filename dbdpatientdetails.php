@@ -23,9 +23,9 @@ if(isset($_POST['submitsearch']))
     {
       while (($row = mysqli_fetch_array($result))&&($row = mysqli_fetch_array($result)))
       {
-        $fullname =$_POST['fullname'];
-        $bloodgroup =$_POST['bloodgroup'];
-        $address	=$_POST['address'];
+        $fullname =$row['fullname'];
+        $bloodgroup =$row['bloodgroup'];
+        $address	=$row['address'];
         $dob =$_POST['dob'];
         $telephone	=$_POST['telephone'];
         $nic =$_POST['nic'];
