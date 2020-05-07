@@ -11,7 +11,7 @@ if(isset($_POST['submitsearch']))
     $connection = mysqli_connect('localhost','root','','healthassistant');
     
     // mysql search query
-    $query = "SELECT * FROM `patientreg` WHERE `nic` = $nic LIMIT 1 union SELECT * FROM `$nic` WHERE date=(SELECT max(date) FROM `$nic`)";
+    $query = "SELECT * FROM `patientreg` WHERE nic = '$nic' union SELECT * FROM '$nic' WHERE date=(SELECT max(date) FROM '$nic')";
    
     
     $result = mysqli_query($connection, $query);
@@ -19,7 +19,7 @@ if(isset($_POST['submitsearch']))
     
     // if id exist 
     // show data in inputs
-    if((mysqli_num_rows($query) >= 0))
+    if((mysqli_num_rows($result) >= 0))
     {
       while (($row = mysqli_fetch_array($result)))
       {
