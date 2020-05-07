@@ -12,16 +12,16 @@ if(isset($_POST['submitsearch']))
     
     // mysql search query
     $query = "SELECT * FROM `patientreg` WHERE `nic` = $nic LIMIT 1";
-    $query = "SELECT * FROM `$nic`";
+    $query1 = "SELECT * FROM `$nic`";
     
     $result = mysqli_query($connect, $query);
-    $result = mysqli_query($connect, $query);
+    $result1 = mysqli_query($connect, $query1);
     
     // if id exist 
     // show data in inputs
-    if(mysqli_num_rows($result) > 0)
+    if((mysqli_num_rows($result) > 0)&&(mysqli_num_rows($result) > 0))
     {
-      while ($row = mysqli_fetch_array($result))
+      while (($row = mysqli_fetch_array($result))&&($row = mysqli_fetch_array($result)))
       {
         $fullname =$_POST['fullname'];
         $bloodgroup =$_POST['bloodgroup'];
