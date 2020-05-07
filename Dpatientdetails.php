@@ -109,11 +109,11 @@
 
                 <tr>
                     <td><label>Full Name: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
+                    <td><input type="text" class="form-control" disabled name="fullname" value="<?php echo $fullname;?>"></td>
                 </tr>
                 <tr>
                     <td><label>Telephone: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
+                    <td><input type="text" class="form-control" disabled name="telephone" value="<?php echo $fullname;?>"></td>
                 </tr>
                 <tr>
                     <td><label>Address: </label></td>
