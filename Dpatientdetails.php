@@ -11,19 +11,19 @@ if(isset($_POST['submitsearch']))
     $connection = mysqli_connect('localhost','root','','healthassistant');
     
     // mysql search query
-  //  $query = "select fullname , bloodgroup , address, dob ,telephone, nic, height, weight ,image from patientreg where nic = '$nic' ";
-    $query1 = "select * from $nic where id=(select max(id) from '$nic')";
+   $query = "select fullname , bloodgroup , address, dob ,telephone, height, weight ,nic, image from patientreg where nic = '$nic' ";
+    $query1 = "select * from $nic order by id DESC LIMIT 1";
    
     
-    //$result = mysqli_query($connection, $query);
+    $result = mysqli_query($connection, $query);
     $result1 = mysqli_query($connection, $query1);
     
-   //&&(mysqli_num_rows($result1) > 0)  &&($row = mysqli_fetch_array($result1)))
+   
     // if id exist 
     // show data in inputs
-    if(mysqli_num_rows($result1) > 0)
+    if(mysqli_num_rows($result) > 0)
     {
-      while ($row = mysqli_fetch_array($result1))
+      while ($row = mysqli_fetch_array($result))
       {
         $fullname =$row['fullname'];
         $bloodgroup =$row['bloodgroup'];
@@ -34,6 +34,39 @@ if(isset($_POST['submitsearch']))
         $height =$row['height'];
         $weight =$row['weight'];
         $image = $row['image'];
+       
+      }  
+    }
+    
+    // if the id not exist
+    // show a message and clear inputs
+    else {
+        echo "Undifined nic";
+        $fullname ="";
+        $bloodgroup ="";
+        $address	="";
+        $dob ="";
+        $telephone	="";
+        $nic ="";
+        $height ="";
+        $weight ="";
+        $image = "";
+        $date = "";
+        $symptomes = "";
+        $cause_of_the_disease ="";
+        $solution = "";
+        $approved_medication = "";
+        $attachments = "";
+    }
+
+    $query1 = "select * from $nic order by id DESC LIMIT 1";
+    $result1 = mysqli_query($connection, $query1);
+    
+    if(mysqli_num_rows($result1) > 0)
+    {
+      while($row = mysqli_fetch_array($result1))
+      {
+      
         $date = $row['date'];
         $symptomes = $row['symptomes'];
         $cause_of_the_disease =$row['cause_of_the_disease'];
@@ -63,8 +96,6 @@ if(isset($_POST['submitsearch']))
         $approved_medication = "";
         $attachments = "";
     }
-    
-    
     
     mysqli_close($connection);
     
@@ -283,12 +314,6 @@ else{
 
                         <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
                             name="approved_medication" value="<?php echo $approved_medication;?>"><br>
-
-
-                        Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
-
-                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled name="advice"
-                            value="<?php echo $advice;?>"><br>
 
                         Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
                             data-placement="right">

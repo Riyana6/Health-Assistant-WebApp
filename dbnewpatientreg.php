@@ -41,8 +41,8 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
       
     
         $msg = "";
-	    $query1 = "INSERT INTO patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
-				VALUES ('{$fullname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$image}','{$date}')";
+	    $query1 = "insert into patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
+				values ('{$fullname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$image}','{$date}')";
 				
 	
         mysqli_query($connection, $query1);
@@ -59,13 +59,13 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
                 
         $msg1 = "";
         $target2 = "files/".basename($attachments);
-        $sql = "CREATE TABLE $nic as SELECT *
-                FROM nicno ";
+        $sql = "create table $nic as select *
+                from nicno ";
 
         if(mysqli_query($connection, $sql))
             {
-                $query2 = "INSERT INTO $nic (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
-                            VALUES ('{$nic}','{$date}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
+                $query2 = "insert into $nic (nic , date , symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
+                            values ('{$nic}','{$date}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
                             
                 
                 mysqli_query($connection, $query2);
