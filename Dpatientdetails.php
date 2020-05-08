@@ -11,7 +11,7 @@ if(isset($_POST['submitsearch']))
     $connection = mysqli_connect('localhost','root','','healthassistant');
     
     // mysql search query
-   $query = "select fullname , bloodgroup , address, dob ,telephone, height, weight ,nic, image from patientreg where nic = '$nic' ";
+   $query = "select nic, fullname , bloodgroup , address, dob ,gender ,telephone, height, weight , image from patientreg where nic = '$nic' ";
     $query1 = "select * from $nic order by date DESC LIMIT 1";
    
     
