@@ -28,24 +28,6 @@
             <div class="container">
 
                 <div class="signup-content">
-                    <div id="demo" class="signup-form">
-                        <div class="card">
-                            <figure>
-                                <h2 style="font-family:calibri">For Patients</h2>
-                                <img src="images/vaccine.png" alt="sing up image" height="200px" width="200px">
-                                <p> This is for Patients to sign Up to the account.</p>
-                                <div class="form-group form-button">
-                                    <center>
-                                        <button type="submit" class="btn btn-dark" width="70%">
-                                            <a href="patientreg.php" style="color:white;">Register</a>
-                                        </button>
-                                    </center>
-                                </div>
-                            </figure>
-
-
-                        </div>
-                    </div>
                     <div id="demo2" class="signup-form" style="margin-left:20px;">
                         <figure>
                             <h2 style="font-family:calibri">For Doctors</h2>
