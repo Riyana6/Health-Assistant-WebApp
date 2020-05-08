@@ -44,7 +44,7 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
     
         $msg = "";
 	    $query1 = "insert into patientreg (nic,fullname , bloodgroup , address , dob ,gender, telephone , height , weight,image,date)
-				values ('{$nic}','{$fullname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$gender}','{$height}','{$weight}','{$image}','{$date}')";
+				values ('{$nic}','{$fullname}','{$bloodgroup}','{$address}','{$dob}','{$gender}','{$telephone}','{$height}','{$weight}','{$image}','{$date}')";
 				
 	
         mysqli_query($connection, $query1);

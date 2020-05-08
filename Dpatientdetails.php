@@ -12,11 +12,12 @@ if(isset($_POST['submitsearch']))
     
     // mysql search query
    $query = "select nic, fullname , bloodgroup , address, dob ,gender ,telephone, height, weight , image from patientreg where nic = '$nic' ";
-    $query1 = "select * from $nic where date=max(date) LIMIT 1";
-   
+    
+    
     
     $result = mysqli_query($connection, $query);
-    $result1 = mysqli_query($connection, $query1);
+    
+    
     
    
     // if id exist 
@@ -62,8 +63,11 @@ if(isset($_POST['submitsearch']))
         $attachments = "";
     }
 
-    $query1 = "select * from $nic order by id DESC LIMIT 1";
+    $query1 = "select * from $nic order by date desc limit 1";
     $result1 = mysqli_query($connection, $query1);
+    if (!$result1) {
+        echo("Error description: " . mysqli_error($connection));
+      }
     
     if(mysqli_num_rows($result1) > 0)
     {
@@ -249,7 +253,11 @@ else{
 
                     <div class="col">
                         <table cellpadding="5">
-
+                            <tr>
+                                <td><label>NIC: </label></td>
+                                <td><input type="text" class="form-control" disabled name="nic"
+                                        value="<?php echo $nic;?>"></td>
+                            </tr>
                             <tr>
                                 <td><label>Full Name: </label></td>
                                 <td><input type="text" class="form-control" disabled name="fullname"
@@ -265,11 +273,7 @@ else{
                                 <td><input type="text" class="form-control" disabled name="address"
                                         value="<?php echo $address;?>"></td>
                             </tr>
-                            <tr>
-                                <td><label>NIC: </label></td>
-                                <td><input type="text" class="form-control" disabled name="nic"
-                                        value="<?php echo $nic;?>"></td>
-                            </tr>
+
                             <tr>
                                 <td><label>DOB: </label></td>
                                 <td><input type="text" class="form-control" disabled name="dob"
