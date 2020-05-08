@@ -272,6 +272,11 @@ else{
                                         value="<?php echo $dob;?>"></td>
                             </tr>
                             <tr>
+                                <td><label>Gender: </label></td>
+                                <td><input type="text" class="form-control" disabled name="gender"
+                                        value="<?php echo $gender;?>"></td>
+                            </tr>
+                            <tr>
                                 <td><label>Blood Group: </label></td>
                                 <td><input type="text" class="form-control" disabled name="bloodgroup"
                                         value="<?php echo $bloodgroup;?>"></td>
