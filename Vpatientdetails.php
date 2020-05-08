@@ -1,3 +1,150 @@
+<?php
+
+// php code to search data in mysql database and set it in input text
+
+if(isset($_POST['submitsearch']))
+{
+    // id to search
+    $nic = $_POST['nic'];
+    
+    // connect to mysql
+    $connection = mysqli_connect('localhost','root','','healthassistant');
+    
+    // mysql search query
+   $query = "select nic, fullname , bloodgroup , address, dob ,gender ,telephone, height, weight , image from patientreg where nic = '$nic' ";
+    
+    
+    
+    $result = mysqli_query($connection, $query);
+    
+    
+    
+   
+    // if id exist 
+    // show data in inputs
+    if(mysqli_num_rows($result) > 0)
+    {
+      while ($row = mysqli_fetch_array($result))
+      {
+        $fullname =$row['fullname'];
+        $bloodgroup =$row['bloodgroup'];
+        $address	=$row['address'];
+        $dob =$row['dob'];
+        $gender = $row['gender'];
+        $telephone	=$row['telephone'];
+        $nic =$row['nic'];
+        $height =$row['height'];
+        $weight =$row['weight'];
+        $image = $row['image'];
+       
+      }  
+    }
+    
+    // if the id not exist
+    // show a message and clear inputs
+    else {
+        echo "Undifined nic";
+        $fullname ="";
+        $bloodgroup ="";
+        $address	="";
+        $gender = "";
+        $dob ="";
+        $telephone	="";
+        $nic ="";
+        $height ="";
+        $weight ="";
+        $image = "";
+        $date = "";
+        $doctor = "";
+        $symptomes = "";
+        $cause_of_the_disease ="";
+        $solution = "";
+        $approved_medication = "";
+        $attachments = "";
+    }
+
+    $query1 = "select * from $nic order by date desc limit 1";
+    $result1 = mysqli_query($connection, $query1);
+    if (!$result1) {
+        echo("Error description: " . mysqli_error($connection));
+      }
+    
+    if(mysqli_num_rows($result1) > 0)
+    {
+      while($row = mysqli_fetch_array($result1))
+      {
+      
+        $date = $row['date'];
+        $doctor = $row['doctor'];
+        $symptomes = $row['symptomes'];
+        $cause_of_the_disease =$row['cause_of_the_disease'];
+        $solution = $row['solution'];
+        $approved_medication = $row['approved_medication'];
+        $attachments = $row['attachments'];
+      }  
+    }
+    
+    // if the id not exist
+    // show a message and clear inputs
+    else {
+        echo "Undifined nic";
+        $fullname ="";
+        $bloodgroup ="";
+        $address	="";
+        $dob ="";
+        $gender = "";
+        $telephone	="";
+        $nic ="";
+        $height ="";
+        $weight ="";
+        $image = "";
+        $date = "";
+        $doctor = "";
+        $symptomes = "";
+        $cause_of_the_disease ="";
+        $solution = "";
+        $approved_medication = "";
+        $attachments = "";
+    }
+    
+    mysqli_close($connection);
+    
+}
+
+// in the first time inputs are empty
+else{
+    $fullname ="";
+        $bloodgroup ="";
+        $address	="";
+        $dob ="";
+        $gender = "";
+        $telephone	="";
+        $nic ="";
+        $height ="";
+        $weight ="";
+        $image = "";
+        $date = "";
+        $doctor = "";
+        $symptomes = "";
+        $cause_of_the_disease ="";
+        $solution = "";
+        $approved_medication = "";
+        $attachments = "";
+}
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
 <html>
 
 <head>
@@ -33,6 +180,10 @@
         text-align: center;
 
     }
+
+    .centerTable {
+        margin: 0px auto;
+    }
     </style>
 
 </head>
@@ -48,113 +199,143 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 
+    <frameset rows="*,*">
+        <frame src="frame_1.php">
+            <form action="Vpatientdetails.php" method="POST" enctype="multipart/form-data">
 
-    <form action="">
-
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="hospital-medicine-icon-png-favpng-r1z9JHyesUSmRqNn7WL3xkb7Q.png" width="30" height="30"
-                    class="d-inline-block align-top" alt="">
-                Patient profile
-            </a>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    User_name
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Profile</a>
-                    <a class="dropdown-item" href="#">Help&Contact</a>
-                    <a class="dropdown-item" href="#">LogOut</a>
-                </div>
-            </div>
-        </nav>
-    </form>
-
-
-    <form name='form' id='' action='' method='post'>
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="hospital-medicine-icon-png-favpng-r1z9JHyesUSmRqNn7WL3xkb7Q.png"
+                            class="d-inline-block align-top" alt="" style="width:75px;height:90px;">
+                        Patient profile
+                    </a>
+                    <table class="centerTable">
+                        <tr>
+                            <td><input class="center-block" type="text" name="nic"
+                                    placeholder="Enter patient NIC number."
+                                    style="height:50px; width:300px;opacity:0.5;"></td>
+                            <td><input class="center-block" type="submit" name="submitsearch" value="Search"
+                                    style="height:25px; width:70px;"></td>
+                        </tr>
+                    </table>
 
 
 
-        <div class="col">
-            <table cellpadding="5">
-
-                <tr>
-                    <td><label>Full Name: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-                <tr>
-                    <td><label>Telephone: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-                <tr>
-                    <td><label>Address: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-                <tr>
-                    <td><label>NIC: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-                <tr>
-                    <td><label>DOB: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-                <tr>
-                    <td><label>Blood Group: </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-                <tr>
-                    <td><label>Height(m): </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-                <tr>
-                    <td><label>Weight(kg): </label></td>
-                    <td><input type="text" class="form-control" disabled></td>
-                </tr>
-            </table>
-
-            <br>
-            <h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
-
-                <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    style="height:40px; width:200px;" disabled><br>
-
-                Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
-
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
-
-                Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                    data-placement="right">
-
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+                    <img src="doctor-icon-medical-icon-people-icon-black-symbol-cross-logo-circle-png-clip-art.png"
+                        class="d-inline-block align-top" alt="" style="width:75px;height:90px;">
 
 
-                Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Help&Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </form>
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+            <frame src="index.php?action_type=top" name="topframe" scrolling="no" noresize="noresize" id="topframe"
+                title="" />
+            <!--<fram src ="index.php?action_type=content" name="maiframe" scrolling="no" noresize="noresize" id="mainframe" />-->
 
-                Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                    data-placement="right">
+            <frameset cols="225,*" frameborder="no" border="0" framespacing="0">
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+                <frame src="index.php?action_type=menu" name="menuframe" scrolling="no" noresize="noresize"
+                    id="menuframe" title="" />
+                <form name='form' id='' action='Vpatientdetails.php' method='POST' enctype="multipart/form-data">
 
 
-                Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+                    <div class="col">
+                        <table cellpadding="5">
+                            <tr>
+                                <td><label>NIC: </label></td>
+                                <td><input type="text" class="form-control" disabled name="nic"
+                                        value="<?php echo $nic;?>"></td>
+                            </tr>
+                            <tr>
+                                <td><label>DOB: </label></td>
+                                <td><input type="text" class="form-control" disabled name="dob"
+                                        value="<?php echo $dob;?>"></td>
+                            </tr>
 
-                Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+                            <tr>
+                                <td><label>Blood Group: </label></td>
+                                <td><input type="text" class="form-control" disabled name="bloodgroup"
+                                        value="<?php echo $bloodgroup;?>"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Height(m): </label></td>
+                                <td><input type="text" class="form-control" disabled name="height"
+                                        value="<?php echo $height;?>"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Weight(kg): </label></td>
+                                <td><input type="text" class="form-control" disabled name="weight"
+                                        value="<?php echo $weight;?>"></td>
+                            </tr>
+                        </table>
 
-                <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                    disabled><br>
+                        Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-        </div>
-    </form>
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                            style="height:40px; width:200px;" disabled name="date" value="<?php echo $date;?>"><br>
+                        Doctor <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                            style="height:40px; width:200px;" disabled name="doctor" value="<?php echo $doctor;?>"><br>
+
+                        Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                            data-placement="right">
+
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
+                            name="symptomes" value="<?php echo $symptomes;?>"><br>
+
+                        Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                            data-placement="right">
+
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
+                            name="cause_of_the_disease" value="<?php echo $cause_of_the_disease;?>"><br>
+
+
+                        Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                            data-placement="right">
+
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
+                            name="solution" value="<?php echo $solution;?>"><br>
+
+                        Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                            data-placement="right">
+
+                        <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
+                            name="approved_medication" value="<?php echo $approved_medication;?>"><br>
+
+                        Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                            data-placement="right">
+
+                        <input type='file' id='category' class="shadow p-3 mb-5 bg-white rounded" disabled
+                            name="attachments" value="<?php echo $attachments;?>"><br>
+
+                    </div>
+                </form>
+
+
+
+                <frame class="framebordertop" src="index.php?action_type=login-info" name="mainframe" scrolling="auto"
+                    noresize="noresize" id="mainframe" title="" />
+
+            </frameset>
+
+    </frameset>
+
+    <noframes>
+
+    </noframes>
+
+    </frameset>
 
 
 </body>
