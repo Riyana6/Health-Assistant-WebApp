@@ -17,6 +17,7 @@ if(isset($_POST['submit']))
 {
 	$fname =$_POST['fullname'];
 	$age =$_POST['age'];
+	$gender =$_POST['gender'];
 	$nic =$_POST['nic'];
     $mbbsid	=$_POST['mbbsid'];
     $workhospital =$_POST['workhospital'];
@@ -37,8 +38,8 @@ if(isset($_POST['submit']))
  
   $msg = "";
 	
-	$query = "INSERT INTO doctorreg (fullname , age , nic , mbbsid , workhospital , position , specialist , telephone , address , password,image)
-				VALUES ('{$fname}','{$age}','{$nic}','{$mbbsid}','{$workhospital}','{$position}','{$specialist}','{$telephone}','{$address}','{$hashed_password}','{$image}')";
+	$query = "INSERT INTO doctorreg (nic, fullname , age ,gender, mbbsid , workhospital , position , specialist , telephone , address , password,image)
+				VALUES ('{$nic}','{$fname}','{$age}','{$gender}','{$mbbsid}','{$workhospital}','{$position}','{$specialist}','{$telephone}','{$address}','{$hashed_password}','{$image}')";
 				
 	
 	$result = mysqli_query($connection,$query);
