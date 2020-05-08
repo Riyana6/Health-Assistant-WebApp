@@ -67,12 +67,12 @@
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    User_name
+                    More
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Profile</a>
+                    
                     <a class="dropdown-item" href="#">Help&Contact</a>
-                    <a class="dropdown-item" href="#">LogOut</a>
+                    <a class="dropdown-item" href="login.php">LogOut</a>
                 </div>
             </div>
         </nav>
