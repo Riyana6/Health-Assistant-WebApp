@@ -126,6 +126,10 @@
                     <td><input type="text" class="form-control" name="dob"></td>
                 </tr>
                 <tr>
+                    <td><label>Gender: </label></td>
+                    <td><input type="text" class="form-control" name="gender"></td>
+                </tr>
+                <tr>
                     <td><label>Image: </label></td>
                     <td><input type="file" class="form-control" name="image"></td>
                 </tr>
