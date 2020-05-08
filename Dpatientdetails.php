@@ -29,6 +29,7 @@ if(isset($_POST['submitsearch']))
         $bloodgroup =$row['bloodgroup'];
         $address	=$row['address'];
         $dob =$row['dob'];
+        $gender = $row['gender'];
         $telephone	=$row['telephone'];
         $nic =$row['nic'];
         $height =$row['height'];
@@ -45,6 +46,7 @@ if(isset($_POST['submitsearch']))
         $fullname ="";
         $bloodgroup ="";
         $address	="";
+        $gender = "";
         $dob ="";
         $telephone	="";
         $nic ="";
@@ -86,6 +88,7 @@ if(isset($_POST['submitsearch']))
         $bloodgroup ="";
         $address	="";
         $dob ="";
+        $gender = "";
         $telephone	="";
         $nic ="";
         $height ="";
@@ -110,6 +113,7 @@ else{
         $bloodgroup ="";
         $address	="";
         $dob ="";
+        $gender = "";
         $telephone	="";
         $nic ="";
         $height ="";
