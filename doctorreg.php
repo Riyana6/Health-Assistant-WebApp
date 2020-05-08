@@ -29,6 +29,10 @@
                                 <td><input type="text" class="form-control " name="age"></td>
                             </tr>
                             <tr>
+                                <td>Gender<td>
+                                <td><input type="text" class="form-control " name="gender"></td>
+                            </tr>
+                            <tr>
                                 <td>NIC</td>
                                 <td><input type="text" class="form-control " name="nic"></td>
                             </tr>
