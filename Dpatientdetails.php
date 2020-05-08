@@ -12,7 +12,7 @@ if(isset($_POST['submitsearch']))
     
     // mysql search query
    $query = "select nic, fullname , bloodgroup , address, dob ,gender ,telephone, height, weight , image from patientreg where nic = '$nic' ";
-    $query1 = "select * from $nic order by date DESC LIMIT 1";
+    $query1 = "select * from $nic where date=max(date) LIMIT 1";
    
     
     $result = mysqli_query($connection, $query);
