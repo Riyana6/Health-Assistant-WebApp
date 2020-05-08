@@ -20,6 +20,7 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
 	$bloodgroup =$_POST['bloodgroup'];
     $address	=$_POST['address'];
     $dob =$_POST['dob'];
+    $gender =$_POST['gender'];
     $telephone	=$_POST['telephone'];
     $nic =$_POST['nic'];
     $height =$_POST['height'];
@@ -42,7 +43,7 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
       
     
         $msg = "";
-	    $query1 = "insert into patientreg (fullname , bloodgroup , address , dob , telephone ,nic, height , weight,image,date)
+	    $query1 = "insert into patientreg (nic,fullname , bloodgroup , address , dob ,gender, telephone , height , weight,image,date)
 				values ('{$fullname}','{$bloodgroup}','{$address}','{$dob}','{$telephone}','{$nic}','{$height}','{$weight}','{$image}','{$date}')";
 				
 	
@@ -65,8 +66,8 @@ $connection = mysqli_connect('localhost','root','','healthassistant');
 
         if(mysqli_query($connection, $sql))
             {
-                $query2 = "insert into $nic (nic , date ,doctor, symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
-                            values ('{$nic}','{$date}','{$doctor}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
+                $query2 = "insert into $nic (date ,doctor, symptomes ,  cause_of_the_disease , solution ,approved_medication, attachments)
+                            values ('{$date}','{$doctor}','{$symptomes}','{$cause_of_the_disease}','{$solution}','{$approved_medication}','{$attachments}')";
                             
                 
                 mysqli_query($connection, $query2);
