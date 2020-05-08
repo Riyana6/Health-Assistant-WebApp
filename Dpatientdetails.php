@@ -254,6 +254,14 @@ else{
                     <div class="col">
                         <table cellpadding="5">
                             <tr>
+
+                                <td>
+                                    <img
+                                        src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['image']); ?>" />
+                                </td>
+
+                            </tr>
+                            <tr>
                                 <td><label>NIC: </label></td>
                                 <td><input type="text" class="form-control" disabled name="nic"
                                         value="<?php echo $nic;?>"></td>
