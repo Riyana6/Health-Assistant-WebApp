@@ -78,122 +78,68 @@
     </form>
     <h3 class="animated pulse"><u>New Testing</u></h3>
 
-    <form name='form' id='' action='' method='post'>
-<h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-        title="enter date.">
-</h5>
-<input type='date' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-    placeholder='enter date.' style="width:25%"><br>
+    form name='form' id='' action='dbnewtest.php' method='post' enctype="multipart/form-data">
+    <div>
 
-</form>
+        <h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
+                value="20200101">
 
-    <form name='form' id='' action='' method='post'>
-        <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                title="write here syptomes detial.">
+            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;"
+                name="date" value=""><br>
         </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here syptomes detial.' disabled><br>
-        <input type="button" name='edit' class="btn btn-secondary" id="button" value='edit'>
-        <input type="button" name='save' class="btn btn-primary" id="button2" value='save'>
-    </form>
-    <form name='form' id='' action='' method='post'>
+        <h5>Doctor NIC<img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;"
+                name="doctor" value=""><br>
+        </h5>
+        <h5>Patient NIC <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;"
+                name="nic" value=""><br>
+
+        </h5>
+        <h5>Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" name="symptomes" value=""><br>
+
+        </h5>
         <h5>Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                data-placement="right" title="write here Causes of the disease detial.">
+                data-placement="right">
+
+            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" name="cause_of_the_disease"
+                value=""><br>
+
+
         </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here Causes of the disease detial.' disabled><br>
-        <input type="button" name='edit' class="btn btn-secondary" id="button" value='edit'>
-        <input type="button" name='save' class="btn btn-primary" id="button2" value='save'>
-    </form>
-    <form name='form' id='' action='' method='post'>
-        <h5>Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                title="write here Solution detial.">
+        <h5>Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" name="solution" value=""><br>
+
         </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here Solution detial.' disabled><br>
-        <input type="button" name='edit' class="btn btn-secondary" id="button" value='edit'>
-        <input type="button" name='save' class="btn btn-primary" id="button2" value='save'>
-    </form>
-    <form name='form' id='' action='' method='post'>
-        <h5>Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                title="write here Approved medication detial.">
+        <h5>Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" name="approved_medication"
+                value=""><br>
+
         </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here Approved medication detial.' disabled><br>
-        <input type="button" name='edit' class="btn btn-secondary" id="button" value='edit'>
-        <input type="button" name='save' class="btn btn-primary" id="button2" value='save'>
+        <h5>Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+
+            <input type='file' id='category' class="shadow p-3 mb-5 bg-white rounded" name="attachments" value=""><br>
+
+    </div>
+
+    <div>
+        <table class="centerTable">
+            <tr>
+
+                <td><input class="center-block" type="submit" name="submit" value="save"
+                        style="height:25px; width:70px;"></td>
+            </tr>
+        </table>
+    </div>
+
+
     </form>
-    <form name='form' id='' action='' method='post'>
-
-        <h5>Advice <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
-                title="write here Advice detial.">
-        </h5>
-        <input type='text' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-            placeholder='write here Advice detial.' disabled><br>
-        <input type="button" name='edit' class="btn btn-secondary" id="button" value='edit'>
-        <input type="button" name='save' class="btn btn-primary" id="button2" value='save'>
-    </form>
-    <form action="" id='category'>
-        <div class="input-group">
-            <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGroupFile04"
-                    aria-describedby="inputGroupFileAddon04">
-                <label class="custom-file-label" for="inputGroupFile04">Choose file...(image, x-ray, ECG,
-                    etc...)</label>
-            </div>
-            <div class="input-group-append">
-                <button class="btn btn-primary" type="button" id="inputGroupFileAddon04">Upload</button>
-
-            </div>
-        </div>
-    </form>
-    <form action="" id='category'>
-        <button type="button" style="margin-left: 45%; width: 10%;" class="btn btn-success" data-toggle="modal"
-            data-target="#exampleModal">
-            Save
-        </button>
-
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Save and change</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        This details all correct.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-    $(document).ready(function() {
-
-        $("form input[type=text],form input[type=checkbox]").prop("disabled", true);
-
-        $("input[name=edit]").on("click", function() {
-
-            $("input[type=text],input[type=checkbox],select").removeAttr("disabled");
-        })
-
-        $("input[name=save]").on("click", function() {
-
-            $("input[type=text],input[type=checkbox],select").prop("disabled", true);
-        })
-
-
-    })
-    </script>
 </body>
 
 </html>
