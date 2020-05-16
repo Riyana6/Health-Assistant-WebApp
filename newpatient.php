@@ -94,121 +94,98 @@
 
 
 
-        <div class="col">
-            <table cellpadding="5">
+<div class="col">
+    <table cellpadding="5">
 
-                <tr>
-                    <td><label>Full Name: </label></td>
-                    <td><input type="text" class="form-control" name="fullname"> </td>
-                </tr>
-                <tr>
-                    <td><label>Age: </label></td>
-                    <td><input type="text" class="form-control" name="age"></td>
-                </tr>
-                <tr>
-                    <td><label>Blood Group: </label></td>
-                    <td><input type="text" class="form-control" name="bloodgroup"></td>
-                </tr>
-                <tr>
-                    <td><label>Address: </label></td>
-                    <td><input type="text" class="form-control" name="address"></td>
-                </tr>
-                <tr>
-                    <td>Telephone</td>
-                    <td><input type="text" class="form-control " name="telephone"></td>
-                </tr>
-                <tr>
-                    <td><label>NIC: </label></td>
-                    <td><input type="text" class="form-control" name="nic"></td>
-                </tr>
-                <tr>
-                    <td><label>DOB: </label></td>
-                    <td><input type="text" class="form-control" name="dob"></td>
-                </tr>
-                <tr>
-                    <td><label>Gender: </label></td>
-                    <td><input type="text" class="form-control" name="gender"></td>
-                </tr>
-                <tr>
-                    <td><label>Image: </label></td>
-                    <td><input type="file" class="form-control" name="image"></td>
-                </tr>
-                <tr>
-                    <td>Height(cm)</td>
-                    <td><input type="text" class="form-control " name="height"></td>
-                </tr>
-                <tr>
-                    <td>Weight(kg)</td>
-                    <td><input type='text' class="form-control" name="weight"></td>
-                </tr>
-                <tr>
-                    <td>Date</td>
-                    <td><input type='date' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
-                            placeholder='enter date.' style="width:25%"></td>
-                </tr>
-                <tr>
-                    <td>Doctor name</td>
-                    <td>
-                        <input type='text' class="form-control" name="weight"></td>
-                </tr>
-            </table>
+        <tr>
+            <td><label>Full Name: </label></td>
+            <td><input type="text" class="form-control" name="fullname"> </td>
+        </tr>
+        <tr>
+            <td><label>Age: </label></td>
+            <td><input type="text" class="form-control" name="age"></td>
+        </tr>
+        <tr>
+            <td><label>Blood Group: </label></td>
+            <td><input type="text" class="form-control" name="bloodgroup"></td>
+        </tr>
+        <tr>
+            <td><label>Address: </label></td>
+            <td><input type="text" class="form-control" name="address"></td>
+        </tr>
+        <tr>
+            <td>Telephone</td>
+            <td><input type="text" class="form-control " name="telephone"></td>
+        </tr>
+        <tr>
+            <td><label>NIC: </label></td>
+            <td><input type="text" class="form-control" name="nic"></td>
+        </tr>
+        <tr>
+            <td><label>DOB: </label></td>
+            <td><input type="text" class="form-control" name="dob"></td>
+        </tr>
+        <tr>
+            <td><label>Gender: </label></td>
+            <td><input type="text" class="form-control" name="gender"></td>
+        </tr>
+        <tr>
+            <td><label>Image: </label></td>
+            <td><input type="file" class="form-control" name="image"></td>
+        </tr>
+        <tr>
+            <td>Height(cm)</td>
+            <td><input type="text" class="form-control " name="height"></td>
+        </tr>
+        <tr>
+            <td>Weight(kg)</td>
+            <td><input type='text' class="form-control" name="weight"></td>
+        </tr>
+    </table>
 
+    <br>
+    Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
+    <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;"
+        name="date"><br>
 
+    Doctor nic <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
+    <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;"
+        name="doctor"><br>
 
-            Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+    Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' name="symptomes" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
+    <input type='text' name="symptomes" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
-            Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
-                data-placement="right">
+    Causes of the disease <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+        data-placement="right">
 
-            <input type='text' name="cause_of_the_disease" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
+    <input type='text' name="cause_of_the_disease" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
 
-            Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+    Solution <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' name="solution" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
+    <input type='text' name="solution" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
-            Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+    Approved medication <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' name="approved_medication" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
+    <input type='text' name="approved_medication" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
 
 
 
-            Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
+    Attachments <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='file' name="attachments" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
+    <input type='file' name="attachments" id='category' class="shadow p-3 mb-5 bg-white rounded"><br>
 
-            <div class="buttn">
-                <input class="btn btn-primary btn-lg" type="submit" value="Register" name="submit">
-                <a href="Dpatientdetails.php"><input class="btn btn-danger btn-lg" type="reset" value="Cancel"></a>
+    <div class="buttn">
+        <input class="btn btn-primary btn-lg" type="submit" value="Register" name="submit">
+        <a href="Dpatientdetails.php"><input class="btn btn-danger btn-lg" type="reset" value="Cancel"></a>
 
-            </div>
-        </div>
-    </form>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-    $(document).ready(function() {
-
-        $("form input[type=text],form input[type=checkbox]").prop("disabled", true);
-
-        $("input[name=edit]").on("click", function() {
-
-            $("input[type=text],input[type=checkbox],select").removeAttr("disabled");
-        })
-
-        $("input[name=save]").on("click", function() {
-
-            $("input[type=text],input[type=checkbox],select").prop("disabled", true);
-        })
-
-
-    })
-    </script>
-
+    </div>
+</div>
+</form>
 </body>
 
 </html>

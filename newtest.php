@@ -24,12 +24,12 @@
 
     h5 {
         font-style: inherit;
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         margin-left: 2.5%;
     }
 
     h3 {
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         text-align: center;
 
     }
@@ -78,7 +78,7 @@
     </form>
     <h3 class="animated pulse"><u>New Testing</u></h3>
 
-    form name='form' id='' action='dbnewtest.php' method='post' enctype="multipart/form-data">
+    <form name='form' id='' action='dbnewtest.php' method='post' enctype="multipart/form-data">
     <div>
 
         <h5>Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right"
