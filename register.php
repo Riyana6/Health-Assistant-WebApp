@@ -35,9 +35,9 @@
                             <p> This is for Doctors to sign Up to the account.</p>
                             <div class="form-group form-button">
                                 <center>
-                                    <button type="submit" class="btn btn-dark" width="70%">
-                                        <a href="doctorreg.php" style="color:white;">Register</a>
-                                    </button>
+                                <a href="doctorreg.php" style="color:white;"> <button type="submit" class="btn btn-dark" width="70%">
+                                        Register
+                                    </button></a>
                                 </center>
                             </div>
                         </figure>

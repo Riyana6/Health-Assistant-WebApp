@@ -5,7 +5,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
     body {
-        background-image: url(Health-Insurance-Quotes-1920x1080.jpg);
+        background-color: #F5EEF8;
         opacity: 90%;
     }
 
@@ -141,18 +141,21 @@
                     <td>Weight(kg)</td>
                     <td><input type='text' class="form-control" name="weight"></td>
                 </tr>
+                <tr>
+                    <td>Date</td>
+                    <td><input type='date' name='txt_category' id='category' class="shadow p-3 mb-5 bg-white rounded"
+                            placeholder='enter date.' style="width:25%"></td>
+                </tr>
+                <tr>
+                    <td>Doctor name</td>
+                    <td>
+                        <input type='text' class="form-control" name="weight"></td>
+                </tr>
             </table>
 
-            <br>
-            Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;"
-                name="date"><br>
 
-            Doctor nic <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
-            <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded" style="height:40px; width:200px;"
-                name="doctor"><br>
 
             Syptomes <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
@@ -186,7 +189,25 @@
             </div>
         </div>
     </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
 
+        $("form input[type=text],form input[type=checkbox]").prop("disabled", true);
+
+        $("input[name=edit]").on("click", function() {
+
+            $("input[type=text],input[type=checkbox],select").removeAttr("disabled");
+        })
+
+        $("input[name=save]").on("click", function() {
+
+            $("input[type=text],input[type=checkbox],select").prop("disabled", true);
+        })
+
+
+    })
+    </script>
 
 </body>
 
