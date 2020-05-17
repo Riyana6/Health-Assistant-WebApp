@@ -83,6 +83,15 @@ if(isset($_POST['submitsearch']))
         $attachments = $row['attachments'];
       }  
     }
+
+    $sql1="select date from $nic ";
+
+    $result0 =mysqli_query($sql1);
+
+
+    if($result0 === FALSE) {
+    die(mysqli_error());  
+    }
     
     // if the id not exist
     // show a message and clear inputs
@@ -131,6 +140,9 @@ else{
         $approved_medication = "";
         $attachments = "";
 }
+
+
+
 
 
 ?>
@@ -307,9 +319,20 @@ else{
                                 <td><input type="text" class="form-control" disabled name="weight"
                                         value="<?php echo $weight;?>"></td>
                             </tr>
-                        </table>
+                        </table><br>
                         <a href="newtest.php"><input class="btn btn-danger btn-lg" type="button" value="newtest"></a>
                         <br>
+                        <br>
+                        Old Dates <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
+                            data-placement="right">
+                        <?php
+                            echo "<select name='old_date'>";
+                            while ($row = mysqli_fetch_array($result0)) {
+
+                            echo "<option value='" . $row['old_date'] ."'>" . $row['old_date']."</option>";
+                            }
+                            echo "</select>";
+                            ?><br><br>
                         Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
                         <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
