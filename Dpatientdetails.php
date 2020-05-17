@@ -97,6 +97,79 @@ else{
         $attachments = "";
 }
 
+if(isset($_POST['searchdate']))
+{
+    // id to search
+    $nic = $_POST['nic'];
+    
+    // connect to mysql
+    $connection = mysqli_connect('localhost','root','','healthassistant');
+    
+    // mysql search query
+   $query = "select nic, fullname , bloodgroup , address, dob ,gender ,telephone, height, weight , image from patientreg where nic = '$nic' ";
+    
+    
+    
+    $result = mysqli_query($connection, $query);
+    
+    
+    
+   
+    // if id exist 
+    // show data in inputs
+    if(mysqli_num_rows($result) > 0)
+    {
+      while ($row = mysqli_fetch_array($result))
+      {
+        $fullname =$row['fullname'];
+        $bloodgroup =$row['bloodgroup'];
+        $address	=$row['address'];
+        $dob =$row['dob'];
+        $gender = $row['gender'];
+        $telephone	=$row['telephone'];
+        $nic =$row['nic'];
+        $height =$row['height'];
+        $weight =$row['weight'];
+        $image = $row['image'];
+       
+      }  
+    }
+    $query3 = "select * from $nic where date = $row['old_date']";
+    $result3 = mysqli_query($connection, $query3);
+    if (!$result3) {
+        echo("Error description: " . mysqli_error($connection));
+      }
+    
+    if(mysqli_num_rows($resul31) > 0)
+    {
+      while($row = mysqli_fetch_array($result1))
+      {
+      
+        $date = $row['date'];
+        $doctor = $row['doctor'];
+        $symptomes = $row['symptomes'];
+        $cause_of_the_disease =$row['cause_of_the_disease'];
+        $solution = $row['solution'];
+        $approved_medication = $row['approved_medication'];
+        $attachments = $row['attachments'];
+      }  
+    }
+
+    $sql1="select date from $nic order by date desc";
+
+    $result0 =mysqli_query($connection, $sql1);
+
+
+    if($result0 == FALSE) {
+    die(mysqli_error());  
+    }
+    
+
+    
+    
+    mysqli_close($connection);
+    
+}
 
 
 
