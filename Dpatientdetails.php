@@ -71,28 +71,6 @@ if(isset($_POST['submitsearch']))
     
 
     
-    // if the id not exist
-    // show a message and clear inputs
-    else {
-        echo "Undifined nic";
-        $fullname ="";
-        $bloodgroup ="";
-        $address	="";
-        $dob ="";
-        $gender = "";
-        $telephone	="";
-        $nic ="";
-        $height ="";
-        $weight ="";
-        $image = "";
-        $date = "";
-        $doctor = "";
-        $symptomes = "";
-        $cause_of_the_disease ="";
-        $solution = "";
-        $approved_medication = "";
-        $attachments = "";
-    }
     
     mysqli_close($connection);
     
