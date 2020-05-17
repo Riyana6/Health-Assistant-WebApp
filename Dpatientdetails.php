@@ -281,14 +281,14 @@ else{
                         <br>
                         Old Dates <img src="contact_support-24px.svg" alt="" data-toggle="tooltip"
                             data-placement="right">
-                        <?php
+                        <td><?php
                             echo "<select name='old_date'>";
                             while ($row = mysqli_fetch_array($result0)) {
 
                             echo "<option value='" . $row['old_date'] ."'>" . $row['date']."</option>";
                             }
                             echo "</select>";
-                            ?><td><input class="center-block" type="submit" name="submitsearch" value="Search"
+                            ?></td><td><input class="center-block" type="submit" name="searchdate" value="Search"
                             style="height:25px; width:70px;"></td><br><br>
                         Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
