@@ -134,7 +134,7 @@ if(isset($_POST['searchdate']))
        
       }  
     }
-    $query3 = "select * from $nic where date = $row['old_date']";
+    $query3 = "select * from $nic where date = '$row['old_date']'";
     $result3 = mysqli_query($connection, $query3);
     if (!$result3) {
         echo("Error description: " . mysqli_error($connection));
