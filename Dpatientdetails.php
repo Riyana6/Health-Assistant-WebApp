@@ -84,7 +84,7 @@ if(isset($_POST['submitsearch']))
       }  
     }
 
-    $sql1="select date from $nic ";
+    $sql1="select date from $nic order by date desc";
 
     $result0 =mysqli_query($sql1);
 
