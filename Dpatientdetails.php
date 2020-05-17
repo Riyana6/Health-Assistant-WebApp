@@ -140,9 +140,9 @@ if(isset($_POST['searchdate']))
         echo("Error description: " . mysqli_error($connection));
       }
     
-    if(mysqli_num_rows($resul31) > 0)
+    if(mysqli_num_rows($result3) > 0)
     {
-      while($row = mysqli_fetch_array($result1))
+      while($row = mysqli_fetch_array($result3))
       {
       
         $date = $row['date'];
