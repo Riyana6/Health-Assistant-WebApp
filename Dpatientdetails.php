@@ -39,30 +39,6 @@ if(isset($_POST['submitsearch']))
        
       }  
     }
-    
-    // if the id not exist
-    // show a message and clear inputs
-    else {
-        echo "Undifined nic";
-        $fullname ="";
-        $bloodgroup ="";
-        $address	="";
-        $gender = "";
-        $dob ="";
-        $telephone	="";
-        $nic ="";
-        $height ="";
-        $weight ="";
-        $image = "";
-        $date = "";
-        $doctor = "";
-        $symptomes = "";
-        $cause_of_the_disease ="";
-        $solution = "";
-        $approved_medication = "";
-        $attachments = "";
-    }
-
     $query1 = "select * from $nic order by date desc limit 1";
     $result1 = mysqli_query($connection, $query1);
     if (!$result1) {
@@ -92,6 +68,8 @@ if(isset($_POST['submitsearch']))
     if($result0 == FALSE) {
     die(mysqli_error());  
     }
+    
+
     
     // if the id not exist
     // show a message and clear inputs
