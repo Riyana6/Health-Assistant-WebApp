@@ -285,10 +285,11 @@ else{
                             echo "<select name='old_date'>";
                             while ($row = mysqli_fetch_array($result0)) {
 
-                            echo "<option value='" . $row['old_date'] ."'>" . $row['old_date']."</option>";
+                            echo "<option value='" . $row['old_date'] ."'>" . $row['date']."</option>";
                             }
                             echo "</select>";
-                            ?><br><br>
+                            ?><td><input class="center-block" type="submit" name="submitsearch" value="Search"
+                            style="height:25px; width:70px;"></td><br><br>
                         Date <img src="contact_support-24px.svg" alt="" data-toggle="tooltip" data-placement="right">
 
                         <input type='text' id='category' class="shadow p-3 mb-5 bg-white rounded"
