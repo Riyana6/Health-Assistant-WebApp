@@ -86,10 +86,10 @@ if(isset($_POST['submitsearch']))
 
     $sql1="select date from $nic order by date desc";
 
-    $result0 =mysqli_query($sql1);
+    $result0 =mysqli_query($connection, $sql1);
 
 
-    if($result0 === FALSE) {
+    if($result0 == FALSE) {
     die(mysqli_error());  
     }
     
